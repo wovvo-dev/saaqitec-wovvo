@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Utility classes */
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .gradient-border {
+    @apply border-2 border-transparent;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, #ee2720, #f98c0d) border-box;
+  }
+
+  .animate-slide {
+    animation: slide 15s linear infinite;
+  }
+
+  .animate-slide-reverse {
+    animation: slide-reverse 15s linear infinite;
+  }
+
+  .hover\:pause:hover {
+    animation-play-state: paused;
+  }
+}
+
+/* Keyframes */
+@layer utilities {
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-33.33%);
+    }
+  }
+
+  @keyframes slide-reverse {
+    from {
+      transform: translateX(-33.33%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll-reverse 40s linear infinite;
+}
+
+.animate-scroll:hover,
+.animate-scroll-reverse:hover {
+  animation-play-state: paused;
+}
