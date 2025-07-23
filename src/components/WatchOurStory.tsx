@@ -9,7 +9,7 @@ import Link from "next/link";
 import handleCheckout from "@/services/handleCheckout";
 import { useReferral } from "@/context/ReferralContext";
 
-export default function WatchOurStory() {
+export default function watchourstory() {
   const { setPaymentLink, openModal } = useModalStore();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
