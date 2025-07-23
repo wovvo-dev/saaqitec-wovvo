@@ -9,6 +9,9 @@ import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import handleCheckout from "@/services/handleCheckout";
 import { useReferral } from '@/context/ReferralContext';
+import { debug } from "console";
+
+
 
 const Navbar: React.FC = () => {
   const { setPaymentLink, openModal } = useModalStore();
@@ -18,7 +21,6 @@ const Navbar: React.FC = () => {
 
  const handleNavigation = (id: string) => {
   if (pathname === "/") {
-
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -58,6 +60,9 @@ const Navbar: React.FC = () => {
               >
                 Pricing
               </button>
+              <Link href={"/blog"} className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors">
+              Blog
+              </Link>
               <button
                 // onClick={() => scrollToSection("watch-our-story")}
                 onClick={() => handleNavigation("watch-our-story")}
