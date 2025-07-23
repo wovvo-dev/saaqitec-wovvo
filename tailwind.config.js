@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#3b82f6',    // Replace this with your primary color hex code
-        secondary: '#9333ea'   // Replace this with your secondary color hex code
+        primary: '#EE2720',    // Replace this with your primary color hex code
+        secondary: '#F98C0D'   // Replace this with your secondary color hex code
       },
     },
   },
