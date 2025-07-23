@@ -5,16 +5,16 @@ import PricingSection from "../components/PricingSection";
 import FeaturesSection from "../components/FeaturesSection";
 import BenefitsSection from "../components/BenefitsSection";
 import CtaSection from "../components/CtaSection";
-import WatchOurStory from "@/components/WatchOurStory";
+import WatchOurStory from "../components/WatchOurStory";
 import { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
-import FaqsSection from "@/components/FaqsSection"; // ✅ Fixed casing
-import UGCJobAccessCard from "@/components/UGCJobAccessCard";
-import TimelineSection from "@/components/TimelineSection";
-import TestimonialsSection from "@/components/TestimonialSections";
-import PhoneCarousel from "@/components/PhoneCorousal";
-import SocialProof from "@/components/SocialProof";
-import NewTestimonials from "@/components/NewTestimonials";
+import FaqsSection from "../components/FaqsSection"; // ✅ Fixed casing
+import UGCJobAccessCard from "../components/UGCJobAccessCard";
+import TimelineSection from "../components/TimelineSection";
+import TestimonialsSection from "../components/TestimonialSections";
+import PhoneCarousel from "../components/PhoneCorousal";
+import SocialProof from "../components/SocialProof";
+import NewTestimonials from "../components/NewTestimonials";
 
 export default function Home() {
   useEffect(() => {
