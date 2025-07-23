@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { Star } from "lucide-react"
 import Image from "next/image"
-import newTestimonials from "@/data/newTestimonials"
+import newTestimonials from "../data/newTestimonials"
 
 const NewTestimonials = () => {
   const scrollRef = useRef<HTMLDivElement>(null)

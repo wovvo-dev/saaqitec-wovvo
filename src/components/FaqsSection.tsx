@@ -1,5 +1,5 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-// import { Badge } from "@/components/ui/badge"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion"
+// import { Badge } from "../components/ui/badge"
 import { Badge } from "./ui/badge"
 
 import { HelpCircle } from "lucide-react"

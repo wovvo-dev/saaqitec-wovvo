@@ -2,10 +2,10 @@ import React from 'react';
 import {  MessageCircle } from 'lucide-react';
 import {  testimonialsImages } from '../data/testimonials';
 import { sendGAEvent } from '@next/third-parties/google';
-import { plans } from '@/constants/pricing_plans';
+import { plans } from '../constants/pricing_plans';
 import useModalStore from '../zustand-hooks/consent-modal';
 import Link from 'next/link';
-import handleCheckout from '@/services/handleCheckout';
+import handleCheckout from '../services/handleCheckout';
 import { useReferral } from '../context/ReferralContext';
 
 const TestimonialRow: React.FC<{ items: { src: string }[]; reverse?: boolean; startDelay?: string }> = ({ 

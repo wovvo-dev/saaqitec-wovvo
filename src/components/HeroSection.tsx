@@ -3,12 +3,12 @@
 import React from "react";
 import { Check, Infinity } from "lucide-react";
 import useModalStore from "../zustand-hooks/consent-modal";
-import { plans } from "@/constants/pricing_plans";
+import { plans } from "../constants/pricing_plans";
 import { sendGAEvent } from "@next/third-parties/google";
 import Link from "next/link";
-import handleCheckout from "@/services/handleCheckout";
+import handleCheckout from "../services/handleCheckout";
 import { useReferral } from "../context/ReferralContext";
-// import { plans } from "@/constants/pricing_plans";
+// import { plans } from "../constants/pricing_plans";
 
 const HeroSection: React.FC = () => {
   const { openModal, setPaymentLink } = useModalStore();

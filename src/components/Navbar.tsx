@@ -2,12 +2,12 @@
 
 import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
-import { plans } from "@/constants/pricing_plans";
+import { plans } from "../constants/pricing_plans";
 import useModalStore from "../zustand-hooks/consent-modal";
 import { sendGAEvent } from "@next/third-parties/google";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import handleCheckout from "@/services/handleCheckout";
+import handleCheckout from "../services/handleCheckout";
 import { useReferral } from '../context/ReferralContext';
 import { debug } from "console";
 

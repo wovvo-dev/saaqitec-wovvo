@@ -6,7 +6,7 @@ import { Check, X, Play } from "lucide-react"
 import { plans, type PricingPlan } from "../constants/pricing_plans"
 import useModalStore from "../zustand-hooks/consent-modal"
 import { sendGAEvent } from "@next/third-parties/google"
-import handleCheckout from "@/services/handleCheckout"
+import handleCheckout from "../services/handleCheckout"
 import { useReferral } from "../context/ReferralContext"
 
 const PricingSection: React.FC = () => {

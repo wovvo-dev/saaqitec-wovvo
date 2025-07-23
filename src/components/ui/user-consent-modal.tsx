@@ -1,8 +1,8 @@
 "use client";
 
-import useModalStore from "../zustand-hooks/consent-modal";
+import useModalStore from "../../zustand-hooks/consent-modal";
 import React, { FormEvent, useEffect, useState } from "react";
-import { axiosInstance } from "@/constants/axiosInstance";
+import { axiosInstance } from "../../constants/axiosInstance";
 import toast from "react-hot-toast";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";

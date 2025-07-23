@@ -1,6 +1,6 @@
 "use client";
 
-import useModalStore from "../zustand-hooks/consent-modal";
+import useModalStore from "../../zustand-hooks/consent-modal";
 import React from "react";
 
 const TermsAndConditionsModal = () => {

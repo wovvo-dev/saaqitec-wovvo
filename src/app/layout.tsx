@@ -3,10 +3,10 @@ import localFont from "next/font/local";
 import { GoogleAnalytics } from "@next/third-parties/google";
 // import { GoogleAnalytics ,usePageViews } from "nextjs-google-analytics";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import FooterSection from "@/components/FooterSection";
-import UserConsentModal from "@/components/ui/user-consent-modal";
-import TermsAndConditionsModal from "@/components/ui/terms-conditions-modal";
+import Navbar from "../components/Navbar";
+import FooterSection from "../components/FooterSection";
+import UserConsentModal from "../components/ui/user-consent-modal";
+import TermsAndConditionsModal from "../components/ui/terms-conditions-modal";
 import Script from 'next/script';
 import { ReferralProvider } from "../context/ReferralContext";
 

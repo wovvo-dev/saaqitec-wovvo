@@ -4,7 +4,7 @@ import React from "react";
 import { plans } from "../constants/pricing_plans";
 import useModalStore from "../zustand-hooks/consent-modal";
 import { sendGAEvent } from "@next/third-parties/google";
-import handleCheckout from "@/services/handleCheckout";
+import handleCheckout from "../services/handleCheckout";
 import { useReferral } from "../context/ReferralContext";
 
 const CtaSection: React.FC = () => {
