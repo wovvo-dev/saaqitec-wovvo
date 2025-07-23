@@ -28,6 +28,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/app/api/create-checkout-session/route.ts.bak", "src/app/api/stripe/webhook/route.ts.bak"  ],
   "exclude": ["node_modules"]
 }
