@@ -2,14 +2,14 @@
 
 import { useRef, useState } from "react";
 import { plans } from "@/constants/pricing_plans";
-import useModalStore from "@/zustand-hooks/consent-modal";
+import useModalStore from "../zustand-hooks/consent-modal";
 import { sendGAEvent } from "@next/third-parties/google";
 import { Play, Pause } from "lucide-react";
 import Link from "next/link";
 import handleCheckout from "@/services/handleCheckout";
-import { useReferral } from "@/context/ReferralContext";
+import { useReferral } from "../context/ReferralContext";
 
-export default function watchourstory() {
+export default function WatchOurStory() {
   const { setPaymentLink, openModal } = useModalStore();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);

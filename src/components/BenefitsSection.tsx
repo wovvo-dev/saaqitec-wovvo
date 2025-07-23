@@ -2,8 +2,8 @@
 
 import React from "react";
 import { Clock, Star, Settings, Lock, Bell, Users } from "lucide-react";
-import useModalStore from "@/zustand-hooks/consent-modal";
-import { useReferral } from "@/context/ReferralContext";
+import useModalStore from "../zustand-hooks/consent-modal";
+import { useReferral } from "../context/ReferralContext";
 
 const benefits = [
   {

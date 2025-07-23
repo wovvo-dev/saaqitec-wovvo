@@ -11,11 +11,11 @@ import {
   Shield,
 } from "lucide-react";
 import { plans } from "@/constants/pricing_plans";
-import useModalStore from "@/zustand-hooks/consent-modal";
+import useModalStore from "../zustand-hooks/consent-modal";
 import { sendGAEvent } from "@next/third-parties/google";
 import Link from "next/link";
 import handleCheckout from "@/services/handleCheckout";
-import { useReferral } from "@/context/ReferralContext";
+import { useReferral } from "../context/ReferralContext";
 
 const features = [
   {

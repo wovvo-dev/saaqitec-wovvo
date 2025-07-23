@@ -4,10 +4,10 @@ import type React from "react"
 import { useState } from "react"
 import { Check, X, Play } from "lucide-react"
 import { plans, type PricingPlan } from "../constants/pricing_plans"
-import useModalStore from "@/zustand-hooks/consent-modal"
+import useModalStore from "../zustand-hooks/consent-modal"
 import { sendGAEvent } from "@next/third-parties/google"
 import handleCheckout from "@/services/handleCheckout"
-import { useReferral } from "@/context/ReferralContext"
+import { useReferral } from "../context/ReferralContext"
 
 const PricingSection: React.FC = () => {
   const { setPaymentLink, openModal } = useModalStore()

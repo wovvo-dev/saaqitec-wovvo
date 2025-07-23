@@ -8,7 +8,7 @@ import FooterSection from "@/components/FooterSection";
 import UserConsentModal from "@/components/ui/user-consent-modal";
 import TermsAndConditionsModal from "@/components/ui/terms-conditions-modal";
 import Script from 'next/script';
-import { ReferralProvider } from "@/context/ReferralContext";
+import { ReferralProvider } from "../context/ReferralContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
