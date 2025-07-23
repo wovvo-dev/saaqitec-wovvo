@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 /* Base styles */
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text;
+  }
+}
+
+
 @layer base {
   body {
     @apply antialiased;
