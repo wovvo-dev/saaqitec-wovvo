@@ -1,4 +1,6 @@
 import React from 'react'
+import blogCategoryList from '@/data/blogCategoryList'
+import blogMostPopularGuides from '@/data/blogMostPopularGuides'
 // import complianceDisclaimer from '../../../data/compliance';
 const page = () => {
   return (
@@ -6,22 +8,19 @@ const page = () => {
       <div className='bg-[#FAFAFA] w-[390px] h-full py-[60px] px-[40px]'>
             <h2 className='text-l font-bold bg-gradient-to-r from-[#EE2720] to-[#F98C0D] bg-clip-text text-transparent pb-[5px]'>Choose your topic</h2>
             <ul className='blog-topic-list'>
-                <li>Getting Started with UGC</li>
-                <li>UGC Portfolio & Personal Branding</li>
-                <li>Pitching & Working with Brands</li>
-                <li>UGC Career Growth & Income</li>
-                <li>Tools, Platforms & Safety</li>
+            {blogCategoryList.map((item,index)=>{
+                return(
+                    <li key={"blogCategoryList"+""+index}>{item.name}</li>
+                )
+            })}
             </ul>
             <h3 className='text-l font-bold bg-gradient-to-r from-[#EE2720] to-[#F98C0D] bg-clip-text text-transparent pt-[30px] border-b-[1px] border-y-[#d9d9d9] pb-[10px]'>The Most Popular Guides</h3>
             <ul className='blog-cat-list'>
-                <li>The Rise of UGC: Why Now is the Best Time to Become a Creator</li>
-                <li>How to Land Your First UGC Job Without a Huge Following</li>
-                <li>How to Pitch Brands as a UGC Creator (Even if You're Just Starting Out)</li>
-                <li>How to Build a UGC Portfolio That Gets You Hired</li>
-                <li>How WOVVO Helps You Find UGC Jobs Faster and Easier</li>
-                <li>What Makes a Great UGC Creator in 2025?</li>
-                <li>How to Pitch to Brands as a New UGC Creator</li>
-                <li>5 Common Mistakes New UGC Creators Make (And How to Avoid Them)</li>
+                {blogMostPopularGuides.map((item,index)=>{
+                    return(
+                        <li key={"blogMostPopularGuides"+""+index}>{item.name}</li>
+                    )
+                })}
             </ul>
       </div>
       <div className='w-full py-[60px] px-[40px]'>
