@@ -101,6 +101,23 @@
     @apply text-[16px] leading-[30px] text-[#4B5563];
   }
 
+  .blog-topic-list li , .blog-cat-list li
+  {
+    @apply cursor-pointer transition-all duration-200 ease-in-out;
+  }
+
+  .blog-topic-list li:hover , .blog-cat-list li:hover {
+    @apply text-black scale-[1.01];
+  }
+
+  .blog-topic-list li.active {
+    @apply text-black scale-[1.01];
+  }
+
+  .blog-box{
+    @apply cursor-pointer;
+  }
+
   .main-category-thumbnail
   {
     @apply pt-5

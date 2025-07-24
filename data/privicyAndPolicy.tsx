@@ -1,9 +1,4 @@
-
-
-
-
-
- const privacyPolicy = [
+  const privacyPolicy = [
   {
     heading: 'Privacy Policy',
     description: (
