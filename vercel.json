@@ -6,6 +6,7 @@
       "config": { "installCommand": "npm install --legacy-peer-deps" }
     }
   ],
+  "framework": "nextjs",
   "build": {
     "env": {
       "NODE_ENV": "production"
