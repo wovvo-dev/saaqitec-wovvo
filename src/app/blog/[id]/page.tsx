@@ -1,9 +1,9 @@
 'use client'
 
-import blogData from '@/data/blogData'
+import blogData from 'src/data/blogData'
 import { Icon } from 'lucide-react'
-import blogCategoryList from '@/data/blogCategoryList'
-import blogMostPopularGuides from '@/data/blogMostPopularGuides'
+import blogCategoryList from 'src/data/blogCategoryList'
+import blogMostPopularGuides from 'src/data/blogMostPopularGuides'
 import React from 'react'
 import { useRouter } from 'next/navigation';
 // import complianceDisclaimer from '../../../data/compliance';

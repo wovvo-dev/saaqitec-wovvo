@@ -1,10 +1,10 @@
 'use client'
 
 import React from 'react'
-import blogCategoryList from '@/data/blogCategoryList'
-import blogMostPopularGuides from '@/data/blogMostPopularGuides'
+import blogCategoryList from '../../data/blogCategoryList'
+import blogMostPopularGuides from '../../data/blogMostPopularGuides'
 import { useRouter } from 'next/navigation';
-import blogData from '@/data/blogData';
+import blogData from '../../data/blogData';
 // import complianceDisclaimer from '../../../data/compliance';
 const page = () => {
     const router = useRouter();
