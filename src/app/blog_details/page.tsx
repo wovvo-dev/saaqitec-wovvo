@@ -9,8 +9,8 @@ const page = () => {
   const [activePopularIndex, setActivePopularIndex] = useState<number | null>(null)
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[6rem] flex">
-      <div className="bg-[#FAFAFA] w-[390px] h-full py-[60px] px-[40px]">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[6rem] flex blog-wrapper">
+      <div className="bg-[#FAFAFA] w-[390px] py-[60px] px-[25px] blog-sidebar">
         <h2 className="text-l font-bold bg-gradient-to-r from-[#EE2720] to-[#F98C0D] bg-clip-text text-transparent pb-[5px]">
           Choose your topic
         </h2>
@@ -42,7 +42,7 @@ const page = () => {
         </ul>
       </div>
 
-      <div className="w-full py-[60px] px-[40px]">
+      <div className="w-full py-[60px] px-[25px] blog-main-body">
         <ul className="blog_breadcrums flex space-x-2 text-sm text-gray-500">
           <li>Wovvo Guides</li>
           <li>&gt;</li>

@@ -31,8 +31,8 @@ const Page = () => {
   const currentCategory = pathname?.split('/category/')[1] || ''
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[6rem] flex">
-      <div className='bg-[#FAFAFA] w-[390px] h-full py-[60px] px-[40px]'>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[6rem] flex blog-wrapper">
+      <div className='bg-[#FAFAFA] w-[390px] py-[60px] px-[25px] blog-sidebar'>
         <h2 className='text-l font-bold bg-gradient-to-r from-[#EE2720] to-[#F98C0D] bg-clip-text text-transparent pb-[5px]'>Choose your topic</h2>
         <ul className='blog-topic-list'>
           {blogCategoryList.map((category, index) => {
@@ -66,7 +66,7 @@ const Page = () => {
         </ul>
       </div>
 
-      <div className='w-full py-[60px] px-[40px]'>
+      <div className='w-full py-[60px] px-[25px] blog-main-body'>
         <h1 className='text-[50px] font-bold p-0 m-0 leading-none'>Our Guides</h1>
         <p className='text-[18px] text-[#4B5563] leading-[32px] pt-3'>
           Our guides offer step-by-step tips to help you start, grow, and succeed as a UGC creator. From building your portfolio to landing paid brand deals, we’ve got you covered.

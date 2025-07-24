@@ -111,12 +111,12 @@ const PressPage = () => {
       </div>
 
       {/* Articles Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[100px]">
-        <h2 className="text-4xl font-bold text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[50px] md:py-[100px] mb-[-50px]">
+        <h2 className="text-[30px] md:text-[40px] font-bold text-center">
           Our Latest: <span className="gradient-text">Articles</span>
         </h2>
 
-        <div className="press-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+        <div className="press-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-[30px]">
           {filteredData.length === 0 ? (
             <p className="text-center text-gray-500 col-span-3">
               No articles found.

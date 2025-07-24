@@ -183,11 +183,6 @@
     @apply inline-block text-[16px] text-[#F98C0D];
   }
 
-  .blog_data
-  {
-
-  }
-
   .blog_data img
   {
     @apply w-full pt-8 pb-2;
@@ -217,4 +212,116 @@
   {
     @apply content-[''] absolute left-0 w-[15px] top-[8px] h-[15px] bg-[url("/blog/right-arrow.png")] bg-no-repeat bg-[length:15px];
   }
+
+  .blog-author_date {
+    @apply flex;
+  }
+
+  .blog-author_date li {
+    @apply flex items-center;
+  }
+
+}
+
+/* responsive */
+
+@media (max-width: 600px) {
+  .aboutbanner h2 {
+    @apply  text-[30px]
+  }
+
+  .aboutbanner {
+    @apply  min-h-[250px]
+  }
+
+  .blog-wrapper {
+    @apply flex-col
+  }
+
+  .blog-sidebar {
+    @apply w-full px-[30px] py-[30px];
+  }
+
+  .blog-main-body {
+    @apply w-full py-[40px] px-[0px];
+  }
+
+  .blog-cat-list li+li+li+li+li {
+    @apply hidden;
+  }
+
+  .blog-main-body .leading-none {
+    @apply text-[30px];
+  }
+
+  .blog-main-body p {
+    @apply text-[14px] leading-[1.4em];
+  }
+
+  .blog-main-body .main-category-thumbnail {
+    @apply grid grid-cols-2;
+  }
+
+  .blog-main-body .main-category-thumbnail .blog-box img {
+    @apply h-[120px];
+  }
+
+  .blog-main-body .main-category-thumbnail .blog-box h6 {
+    @apply text-[11px];
+  }
+
+  .blog-main-body .main-category-thumbnail .blog-box h2 {
+    @apply text-[12px] leading-[1.3em];
+  }
+
+  .blog-main-body .main-category-thumbnail .blog-box p {
+    @apply text-[11px];
+  }
+
+  .blog-topic-list li {
+    @apply text-[13px];
+  }
+
+  .blog-cat-list {
+    @apply text-[14px] leading-[1.3em];
+  }
+
+  .blog-main-body h1 {
+    @apply text-[22px] leading-[1.2em] pt-[4px];
+  }
+
+  .blog-main-body .blog_breadcrums {
+    @apply text-[14px];
+  }
+
+  .blog-main-body h3 {
+    @apply text-[16px];
+  }
+
+  .blog_data ul li {
+    @apply text-[13px] leading-[1.4em];
+  }
+
+  .blog_data ul li::before {
+    --size: 12px;
+    width: var(--size);
+    height: var(--size);
+    background-size: var(--size);
+    content: "";
+    display: inline-block;
+    @apply mr-2;
+  }
+
+  ul.blog-author_date {
+    @apply flex;
+  }
+
+  .blog-author_date li {
+    @apply text-[14px] flex items-center;
+  }
+
+  .blog-author_date li:first-child {
+    @apply text-[14px];
+  }
+
 }

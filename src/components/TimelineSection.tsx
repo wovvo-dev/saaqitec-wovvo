@@ -163,7 +163,8 @@ const TimelineSection: React.FC = () => {
                         <span className="gradient-text ">Pre-Launch Memberships Open</span> — Until July 15, 2025
                     </h2>
                     <p className="text-lg text-gray-600 mb-8">
-                        We&apos;re currently accepting forever access members ahead of our public release. Founding members receive early access (Sold Out), exclusive perks, and permanently discounted plans.
+                        We're currently accepting 80 founding members ahead of our public release. Founding members receive early
+access, exclusive perks, and permanently discounted plans.
                     </p>
                 </div>
 

@@ -63,6 +63,9 @@ const Navbar: React.FC = () => {
               <Link href={"/blog"} className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors">
               Blog
               </Link>
+              <Link href={"/press"} className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors">
+              Press
+              </Link>
               <button
                 // onClick={() => scrollToSection("watch-our-story")}
                 onClick={() => handleNavigation("watch-our-story")}
