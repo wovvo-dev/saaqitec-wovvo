@@ -1,23 +1,33 @@
 'use client'
 
-import React from 'react'
+import blogData from '@/data/blogData'
+import { Icon } from 'lucide-react'
 import blogCategoryList from '@/data/blogCategoryList'
 import blogMostPopularGuides from '@/data/blogMostPopularGuides'
+import React from 'react'
 import { useRouter } from 'next/navigation';
-import blogData from '@/data/blogData';
 // import complianceDisclaimer from '../../../data/compliance';
-const page = () => {
+
+
+type PageProps = {
+    params: { id: string };
+  };
+
+const page = ({ params }: PageProps) => {
+
     const router = useRouter();
+    const blog = blogData.find((item) => item.id === parseInt(params.id));
 
     const handleCategoryClick = (category : string) => {
-        alert(category)
         router.push(`/blog/category/${category}`);
     };
-
+    
     const handleBlogClick = (id : number) => {
         router.push(`/blog/${id}`);
     };
-    
+
+    if (!blog) return <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[6rem] flex"><div className='text-6xl w-full py-[60px] px-[40px]'>Blog not found!</div></div>;
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[6rem] flex">
       <div className='bg-[#FAFAFA] w-[390px] h-full py-[60px] px-[40px]'>
@@ -39,19 +49,20 @@ const page = () => {
             </ul>
       </div>
       <div className='w-full py-[60px] px-[40px]'>
-        <h1 className='text-[50px] font-bold p-0 m-0 leading-none'>Our Guides</h1>
-        <p className='text-[18px] text-[#4B5563] leading-[32px] pt-3'>Our guides offer step-by-step tips to help you start, grow, and succeed as a UGC creator. From building your portfolio to landing paid brand deals, we’ve got you covered.</p>
-        <div className='main-category-thumbnail grid grid-cols-3 gap-4'>
-            {blogData.map((blog_data,index)=>{
-                return(
-                    <div className='blog-box' onClick={()=>handleBlogClick(blog_data.id)}>
-                        <img src={`/blog/`+blog_data.image} className='w-full' alt="" />
-                        <h6>{blog_data.category}</h6>
-                        <h2>{blog_data.title.length> 55 ? blog_data.title.slice(0,60)+"...":blog_data.title}</h2>
-                        <p>{blog_data.caption.length > 70 ? blog_data.caption.slice(0,70)+"...":blog_data.caption}</p>
-                    </div>
-                )
-            })}
+        <ul className='blog_breadcrums'>
+            <li>Wovvo Guides</li>
+            <li>&gt;</li>
+            <li>Guides</li>
+        </ul>
+        <h1 className='text-[50px] font-bold p-0 m-0 leading-[60px] pt-4'>{blog.title}</h1>
+        <p className='text-[18px] text-[#4B5563] leading-[32px] pt-3'>{blog.caption}</p>
+        <ul className='blog-author_date'>
+            <li>By: {blog.author}</li>
+            <li><img src='/blog/calendar.png'/>{blog.date}</li>
+        </ul>
+        <div className='blog_data'>
+        <img src={`/blog/`+blog.image} alt="" />
+        <div dangerouslySetInnerHTML={{ __html: blog.description }}/>
         </div>
       </div>
 

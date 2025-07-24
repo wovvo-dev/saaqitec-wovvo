@@ -6,11 +6,19 @@ import blogMostPopularGuides from '@/data/blogMostPopularGuides'
 import { useRouter } from 'next/navigation';
 import blogData from '@/data/blogData';
 // import complianceDisclaimer from '../../../data/compliance';
-const page = () => {
+
+type PageProps = {
+    params: { category: string };
+  };
+
+const page = ({ params }: PageProps) => {
     const router = useRouter();
+    const categorySlug = decodeURIComponent(params.category).replace(/_/g, ' ');
+    const filteredBlogs = blogData.filter(
+        (blog) => blog.category.toLowerCase() == categorySlug.toLowerCase()
+      );
 
     const handleCategoryClick = (category : string) => {
-        alert(category)
         router.push(`/blog/category/${category}`);
     };
 
@@ -18,6 +26,8 @@ const page = () => {
         router.push(`/blog/${id}`);
     };
     
+    if (!filteredBlogs || filteredBlogs.length === 0) return <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[6rem] flex"><div className='text-6xl w-full py-[60px] px-[40px]'>Category not found!</div></div>;
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[6rem] flex">
       <div className='bg-[#FAFAFA] w-[390px] h-full py-[60px] px-[40px]'>
@@ -42,7 +52,7 @@ const page = () => {
         <h1 className='text-[50px] font-bold p-0 m-0 leading-none'>Our Guides</h1>
         <p className='text-[18px] text-[#4B5563] leading-[32px] pt-3'>Our guides offer step-by-step tips to help you start, grow, and succeed as a UGC creator. From building your portfolio to landing paid brand deals, we’ve got you covered.</p>
         <div className='main-category-thumbnail grid grid-cols-3 gap-4'>
-            {blogData.map((blog_data,index)=>{
+            {filteredBlogs.map((blog_data,index)=>{
                 return(
                     <div className='blog-box' onClick={()=>handleBlogClick(blog_data.id)}>
                         <img src={`/blog/`+blog_data.image} className='w-full' alt="" />
@@ -54,7 +64,6 @@ const page = () => {
             })}
         </div>
       </div>
-
     </div>
   )
 }

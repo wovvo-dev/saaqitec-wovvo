@@ -82,6 +82,8 @@
   animation-play-state: paused;
 }
 
+
+
 @layer components {
 
   .blog-cat-list
@@ -117,6 +119,11 @@
   .blog-box p
   {
     @apply text-[14px] leading-[18px] pt-1 text-[#4B5563];
+  }
+
+  .blog-box img
+  {
+    @apply h-[190px] object-cover rounded-lg;
   }
 
   .blog_breadcrums
@@ -164,9 +171,14 @@
 
   }
 
+  .blog_data img
+  {
+    @apply w-full pt-8 pb-2;
+  }
+
   .blog_data p
   {
-    @apply text-[18px] leading-[32px] text-[#4B5563];
+    @apply text-[18px] leading-[32px] text-[#4B5563] pt-2;
   }
 
   .blog_data h3
@@ -188,8 +200,4 @@
   {
     @apply content-[''] absolute left-0 w-[15px] top-[8px] h-[15px] bg-[url("/blog/right-arrow.png")] bg-no-repeat bg-[length:15px];
   }
-
-
-
-  
 }
