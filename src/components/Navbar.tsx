@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
                 }}
                 className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors"
               >
-                Pay Once
+                Login
               </button>
             </div>
           </div>
