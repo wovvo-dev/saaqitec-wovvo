@@ -15,6 +15,19 @@ const PressPage = () => {
       {/* <TestimonialsSection /> */}
         <TimelineSection />
 
+      <div className="creue-cto bg-[url(/cta-crue.jpg)] min-h-[475px] bg-cover bg-center flex justify-center items-center">
+        <div className="cta-form max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3>Get Notified When New Tools Go Live</h3>
+          <div className="searchbar w-[90%] max-w-[600px] relative mt-0">
+            <input className="placeholder-white bg-black w-full h-[50px] outline-none border-none px-[30px] text-white text-base font-light rounded-lg" type="email" placeholder="Your Email Address"/>
+            <button className="absolute right-0 top-1/2 -translate-x-[10px] -translate-y-1/2 bg-[#ee2720] text-white text-base px-[25px] pt-[10px] pb-[11px] leading-none rounded-[5px]">
+              Send
+            </button>
+          </div>
+          <p>Stay ahead of the curve by getting notified as soon as new tools launch. Be the first to explore innovative features designed to boost your productivity. Subscribe now and never miss an update on the latest tools going live!</p>
+        </div>
+      </div>  
+
     </main>
   )
 }

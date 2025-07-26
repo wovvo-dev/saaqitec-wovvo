@@ -41,7 +41,12 @@ export default function Home() {
         {/* <Timeline /> */}
         <PricingSection />
         {/* <PhoneCarousel /> */}
-        <SocialProof />
+        <SocialProof
+          view={8}
+          title="These Creators Said"
+          highlight="Yes to Wovvo"
+          subtitle="Creators you trust. A platform they believe in."
+        />
         {/* <TestimonialsSection /> */}
         <TimelineSection />
         <WatchOurStory />

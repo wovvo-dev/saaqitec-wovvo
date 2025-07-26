@@ -156,7 +156,7 @@ const TimelineSection: React.FC = () => {
     }, []);
 
     return (
-        <section className="py-16">
+        <section className="py-16" id='timeline'>
             <div className="max-w-7xl mx-auto">
                 <div className="max-w-4xl mx-auto text-center mb-16">
                     <h2 className="text-4xl font-bold mb-6">
