@@ -8,105 +8,152 @@ import { sendGAEvent } from "@next/third-parties/google";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import handleCheckout from "../services/handleCheckout";
-import { useReferral } from '../context/ReferralContext';
-import { debug } from "console";
-
-
+import { useReferral } from "../context/ReferralContext";
 
 const Navbar: React.FC = () => {
-  const { setPaymentLink, openModal } = useModalStore();
+  const { setPaymentLink } = useModalStore();
   const router = useRouter();
   const pathname = usePathname();
   const { referral } = useReferral();
 
- const handleNavigation = (id: string) => {
-  if (pathname === "/") {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-
-      // Remove the hash from the URL after scrolling
-      window.history.replaceState(null, "", window.location.pathname);
+  const handleNavigation = (id: string) => {
+    if (pathname === "/") {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState(null, "", window.location.pathname);
+      }
+    } else {
+      router.push(`/#${id}`);
     }
-  } else {
-    router.push(`/#${id}`);
-  }
-};
+  };
+
+  useEffect(() => {
+  const openBtn = document.querySelector(".menuopenbtn");
+  const closeBtn = document.querySelector(".menuclosebtn");
+  const mobileMenu = document.querySelector(".mb-menu");
+
+  const handleOpen = () => {
+    mobileMenu?.classList.add("open");
+  };
+
+  const handleClose = () => {
+    mobileMenu?.classList.remove("open");
+  };
+
+  const handleMenuItemClick = () => {
+    mobileMenu?.classList.remove("open");
+  };
+
+  // Add event listeners
+  openBtn?.addEventListener("click", handleOpen);
+  closeBtn?.addEventListener("click", handleClose);
+
+  // Close mobile menu when any link or button inside it is clicked
+  const clickableItems = mobileMenu?.querySelectorAll("a, button");
+  clickableItems?.forEach((item) =>
+    item.addEventListener("click", handleMenuItemClick)
+  );
+
+  // Cleanup
+  return () => {
+    openBtn?.removeEventListener("click", handleOpen);
+    closeBtn?.removeEventListener("click", handleClose);
+    clickableItems?.forEach((item) =>
+      item.removeEventListener("click", handleMenuItemClick)
+    );
+  };
+}, []);
+
 
   return (
     <>
       <nav className="fixed w-full z-50 bg-white border-b border-gray-100">
-        <div className={'flex text-xs md:text-base font-bold  justify-center align-center p-2 bg-gradient-to-r from-primary to-secondary text-white'}>🚨 Final Access Tier Just Dropped —{' '}
-          {/* <Link href={plans[1]?.paymentLink} > */}
-          <div  onClick={() => {
-            sendGAEvent("event", "Join", { value: "User Joined!" });
-            setPaymentLink(plans[1]?.paymentLink);
-            handleCheckout(referral)
-            // openModal("Become a Forever Founder Member Now!");
-          }} className="underline  font-semibold ml-1 cursor-pointer">
+        <div className="flex text-xs md:text-base font-bold justify-center align-center p-2 bg-gradient-to-r from-primary to-secondary text-white">
+          🚨 Final Access Tier Just Dropped —
+          <div
+            onClick={() => {
+              sendGAEvent("event", "Join", { value: "User Joined!" });
+              setPaymentLink(plans[1]?.paymentLink);
+              handleCheckout(referral);
+            }}
+            className="underline font-semibold ml-1 cursor-pointer"
+          >
             Lock It In Now!
           </div>
-          {/* </Link> */}
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Logo />
+            <div className="menuopenbtn">
+              <img src="menuopn.svg" alt="" />
+            </div>
 
-            <div className="hidden lg:flex items-center space-x-3">
+            <div className="hidden lg:flex items-center space-x-3 mb-menu">
+              <div className="menuclosebtn">
+                <img src="menuclose.svg" alt="" />
+              </div>
+              <div className="logo-mb">
+                <Logo />
+              </div>
               <button
-                // onClick={() => scrollToSection("pricing")}
                 onClick={() => handleNavigation("pricing")}
                 className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
               >
                 Pricing
               </button>
-              <Link href={"/blog"} className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors">
-              Blog
+              <Link
+                href={"/blog"}
+                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+              >
+                Blog
               </Link>
-              <Link href={"/press"} className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors">
-              Press
+              <Link
+                href={"/press"}
+                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+              >
+                Press
               </Link>
-              <Link href={"/roadmap"} className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors">
-              Roadmap
+              <Link
+                href={"/roadmap"}
+                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+              >
+                Roadmap
               </Link>
-              <Link href={"/our-founders"} className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors">
-              Our Founders
+              <Link
+                href={"/our-founders"}
+                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+              >
+                Our Founders
               </Link>
               <button
-                // onClick={() => scrollToSection("watch-our-story")}
                 onClick={() => handleNavigation("watch-our-story")}
-
                 className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
               >
                 Watch Our Story
               </button>
               <button
-                // onClick={() => scrollToSection("features")}
                 onClick={() => handleNavigation("features")}
                 className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
               >
                 Features
               </button>
               <button
-                // onClick={() => scrollToSection("features")}
                 onClick={() => handleNavigation("faqs")}
                 className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
               >
                 FAQs
               </button>
-              {/* <Link href={plans[1]?.paymentLink} > */}
               <button
                 onClick={() => {
-                  sendGAEvent('event', 'Join', { value: 'User Joined!' })
+                  sendGAEvent("event", "Join", { value: "User Joined!" });
                   setPaymentLink(plans[1]?.paymentLink);
-                  handleCheckout(referral)
-                  // openModal("Become a Forever Founder Member Now!");
+                  handleCheckout(referral);
                 }}
-                className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primarvia=harrisy-dark transition-colors"
+                className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors"
               >
                 Pay Once
               </button>
-              {/* </Link> */}
             </div>
           </div>
         </div>

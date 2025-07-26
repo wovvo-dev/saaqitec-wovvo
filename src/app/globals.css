@@ -237,6 +237,12 @@
     @apply px-[15px] py-[0px];
   }
 
+  .logo-mb,
+  .menuclosebtn,
+  .menuopenbtn {
+    @apply hidden;
+  }
+
 }
 
 /* responsive */
@@ -391,5 +397,52 @@
   #timeline .bg-white.rounded-2xl.p-8.shadow-xl.transition-all.duration-500.ml-8.opacity-100.translate-y-0.scale-95 {
     @apply p-[25px_20px];
   }
+
+  .mb-menu {
+    @apply fixed top-0 left-0 w-full h-screen bg-white flex flex-col gap-2 px-3 transition-all duration-300 ease-in-out translate-x-full;
+  }
+
+  .mb-menu :where(button, a) {
+    @apply bg-[#f8f8f8] w-full flex items-center justify-start m-0 px-4 py-[5px] rounded text-black text-base;
+  }
+
+  .mb-menu button:nth-last-child(1) {
+    @apply bg-[#ee2720] text-white justify-center;
+  }
+
+  .mb-menu.open {
+    @apply translate-x-0;
+  }
+
+  .menuopenbtn {
+  @apply w-[53px] h-[31px] bg-[#ee2d1e] rounded-[5px];
+}
+
+.menuopenbtn img {
+  @apply w-full h-full;
+}
+
+.menuclosebtn {
+  @apply absolute w-[50px] h-[31px] bg-[#ee2720] rounded-[5px] p-[3px] top-[15px] right-[15px];
+}
+
+.menuclosebtn img {
+  @apply w-full h-full;
+}
+
+.logo-mb a {
+  all: unset; /* This is a native CSS reset, not supported by @apply */
+}
+
+.logo-mb {
+  @apply my-[20px] mb-[40px] w-full;
+}
+
+.logo-mb,
+.menuclosebtn,
+.menuopenbtn {
+  @apply block;
+}
+
 
 }
