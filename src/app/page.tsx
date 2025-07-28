@@ -15,6 +15,8 @@ import TestimonialsSection from "../components/TestimonialSections";
 import PhoneCarousel from "../components/PhoneCorousal";
 import SocialProof from "../components/SocialProof";
 import NewTestimonials from "../components/NewTestimonials";
+import PopularNiches from "../components/PopularNiches";
+import HomeBlog from "../components/HomeBlog";
 
 export default function Home() {
   useEffect(() => {
@@ -38,24 +40,29 @@ export default function Home() {
         <HeroSection />
         {/* <CheckoutWithTerms /> */}
         <PlatformLogosSection />
+        {/* Popular niches */}
+        <PopularNiches />
         {/* <Timeline /> */}
         <PricingSection />
         {/* <PhoneCarousel /> */}
-        <SocialProof
-          view={8}
-          title="These Creators Said"
-          highlight="Yes to Wovvo"
-          subtitle="Creators you trust. A platform they believe in."
-        />
-        {/* <TestimonialsSection /> */}
-        <TimelineSection />
+        <div className="py-12 md:py-24">
+          <SocialProof
+            view={8}
+            title="These Creators Said"
+            highlight="Yes to Wovvo"
+            subtitle="Creators you trust. A platform they believe in."
+          />
+        </div>
+        {/* <TestimonialsSection />
+        <TimelineSection /> */}
         <WatchOurStory />
         {/* <LaunchInfoSection /> */}
         <FeaturesSection />
         <NewTestimonials />
-        <BenefitsSection />
+        {/* <BenefitsSection /> */}
         <UGCJobAccessCard />
         <FaqsSection /> {/* ✅ Updated usage */}
+        <HomeBlog />
         <CtaSection />
       </main>
       {/* <FooterSection /> */}

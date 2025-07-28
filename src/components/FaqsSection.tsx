@@ -64,7 +64,7 @@ export default function FAQSection() {
   const renderFaqColumn = (faqs: typeof faqData) => (
     <Accordion type="single" collapsible className="w-full space-y-4">
       {faqs.map((faq) => (
-        <AccordionItem key={faq.question} value={`item-${faq.question}`} className="border-0 bg-transparent">
+        <AccordionItem key={faq.question} value={`item-${faq.question}`} className="border-0 border-b border-black/40 bg-transparent">
           <AccordionTrigger className="text-left hover:no-underline py-4 px-0 text-slate-700 font-medium">
             <div className="flex items-center gap-3 flex-1">
               <HelpCircle className="w-5 h-5 text-slate-500 flex-shrink-0" />
@@ -79,28 +79,38 @@ export default function FAQSection() {
     </Accordion>
   )
   return (
-    <section id="faqs" className="w-full min-h-[80vh] bg-gray-50 py-16 px-4">
+    <section id="faqs" className="w-full bg-gray-50 py-12 md:py-24 mt-12 md:mt-24">
       <div className="max-w-6xl mx-auto">
+        <section id="gif" className="bg-white rounded-3xl p-10 mb-10 grid grid-cols-[60%_40%] gap-4 items-center bg-[url('/gif-banner.jpg')] bg-cover bg-center shadow-md">
+          <div className='contentwrapper-inner'>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              The UGC Tool That<br/><span className="gradient-text">Saves You Hours</span>
+            </h2>
+            <p className="text-slate-700 text-lg mb-8 max-w-[80%]">
+              All the UGC jobs you actually want. filtered, organized, and waiting for you in one simple dashboard
+            </p>
+            <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+              Get Started
+            </button>
+          </div>
+          <div className="gif-image">
+            <img src="gif-overlay.png" />
+          </div>
+        </section>
         {/* Gradient border wrapper */}
-        <div className="p-1 gradient-border bg-white shadow-xl rounded-3xl">
-          <div className="bg-white rounded-3xl p-8 md:p-12 ">
-            {/* Header */}
-            <div className="mb-8">
-              <Badge
-                variant="secondary"
-                className="bg-primary/10 text-primary hover:bg-primary/10 mb-4 px-3 py-1 text-sm font-medium border-0"
-              >
-                FAQ
-              </Badge>
-              <h2 className="text-4xl font-bold mb-6">Frequently <span className="gradient-text">Asked Questions</span> </h2>
+        <div className="bg-white rounded-3xl p-8 md:p-12 ">
+          {/* Header */}
+          <div className="text-center mx-auto mb-16">
+            <h2 className="text-base font-semibold text-primary tracking-wide uppercase">FAQ</h2>
+            <p className="mt-2 text-4xl font-bold sm:text-4xl">
+              Frequently <span className="gradient-text">Asked Questions</span>
+            </p>
+          </div>
 
-            </div>
-
-            {/* Two Column FAQ Layout */}
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-              <div className="space-y-2">{renderFaqColumn(leftColumnFaqs)}</div>
-              <div className="space-y-2">{renderFaqColumn(rightColumnFaqs)}</div>
-            </div>
+          {/* Two Column FAQ Layout */}
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+            <div className="space-y-2">{renderFaqColumn(leftColumnFaqs)}</div>
+            <div className="space-y-2">{renderFaqColumn(rightColumnFaqs)}</div>
           </div>
         </div>
       </div>

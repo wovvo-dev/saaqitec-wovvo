@@ -15,12 +15,12 @@ const CtaSection: React.FC = () => {
   return (
     <section className="py-24 bg-gradient-to-r from-primary to-secondary text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold sm:text-4xl mb-6">
-            Ready to Transform your UGC Career?
+            Ready to Save Hours and Still Land Paid UGC Deals?
           </h2>
           <p className="text-xl mb-10 text-white/80">
-            Be part of the original creator circle redefining how UGC jobs are found. Lifetime access and exclusive perks await.
+            Join the tool creators are using to land UGC gigs faster. One dashboard. All the UGC jobs filtered, updated daily, and organized by niche.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 cursor-pointer">
 

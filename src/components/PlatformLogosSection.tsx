@@ -26,7 +26,7 @@ const platforms = [
 
 const PlatformLogosSection: React.FC = () => {
   return (
-    <section className="pt-10 bg-white overflow-hidden">
+    <section className="pt-5 md:pt-10 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
           <div className="flex space-x-24 animate-slide hover:pause">
