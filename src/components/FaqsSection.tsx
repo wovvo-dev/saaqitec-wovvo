@@ -81,20 +81,20 @@ export default function FAQSection() {
   return (
     <section id="faqs" className="w-full bg-gray-50 py-12 md:py-24 mt-12 md:mt-24">
       <div className="max-w-6xl mx-auto">
-        <section id="gif" className="bg-white rounded-3xl p-10 mb-10 grid grid-cols-[60%_40%] gap-4 items-center bg-[url('/gif-banner.jpg')] bg-cover bg-center shadow-md">
+        <section id="gif" className="bg-white rounded-3xl p-10 mb-10 grid grid-cols-[50%_50%] gap-4 items-center bg-[url('/gif-banner.jpg')] bg-cover bg-center shadow-md">
           <div className='contentwrapper-inner'>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               The UGC Tool That<br/><span className="gradient-text">Saves You Hours</span>
             </h2>
             <p className="text-slate-700 text-lg mb-8 max-w-[80%]">
-              All the UGC jobs you actually want. filtered, organized, and waiting for you in one simple dashboard
+              All the UGC jobs you actually want. filtered, organized, and waiting for you in one simple dashboard.
             </p>
             <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
               Get Started
             </button>
           </div>
-          <div className="gif-image">
-            <img src="gif-overlay.png" />
+          <div className="gif-image shadow-[0px_0px_6px_0px_#00000078] rounded-[10px] overflow-hidden w-full">
+            <img src="banner.gif" />
           </div>
         </section>
         {/* Gradient border wrapper */}

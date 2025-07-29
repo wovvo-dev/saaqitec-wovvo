@@ -98,49 +98,61 @@ const Navbar: React.FC = () => {
               </div>
               <button
                 onClick={() => handleNavigation("pricing")}
-                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Pricing
               </button>
               <Link
+                href={"/about"}
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
+              >
+                About
+              </Link>
+              <Link
                 href={"/blog"}
-                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Blog
               </Link>
               <Link
                 href={"/press"}
-                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Press
               </Link>
               <Link
                 href={"/roadmap"}
-                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Roadmap
               </Link>
               <Link
                 href={"/our-founders"}
-                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Our Founders
               </Link>
+              <Link
+                href={"/affiliate"}
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
+              >
+                Affiliate
+              </Link>
               <button
                 onClick={() => handleNavigation("watch-our-story")}
-                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Watch Our Story
               </button>
               <button
                 onClick={() => handleNavigation("features")}
-                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Features
               </button>
               <button
                 onClick={() => handleNavigation("faqs")}
-                className="text-gray-700 font-medium px-4 py-2 hover:text-primary transition-colors"
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 FAQs
               </button>

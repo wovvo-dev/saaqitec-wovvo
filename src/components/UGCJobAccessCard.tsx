@@ -22,11 +22,11 @@ const UGCJobAccessCard = () => {
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
-            Your shortcut to <span className="gradient-text">finding paid UGC<br/> work</span>. Finally!
+            Your shortcut to <span className="gradient-text">finding paid UGC work</span>
           </h2>
 
           <p className="text-slate-700 text-lg mb-8 text-center">
-            Built for creators to spend less time searching and more time getting hired
+            Built for creators to spend less time searching and more time getting hired.
           </p>
 {/* <Link href={plans[1]?.paymentLink}> */}
           <button
