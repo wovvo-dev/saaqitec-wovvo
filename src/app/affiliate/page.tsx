@@ -20,7 +20,7 @@ export const members: {
 
 ];
 
-const AboutPage = () => {
+const AffiliatePage = () => {
   const visibleCards = members;
 
   return (
@@ -323,4 +323,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default AffiliatePage;
