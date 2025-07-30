@@ -2,22 +2,15 @@
 
 import Image from 'next/image';
 
-export const members: {
-  id: number;
-  image: string;
-  tagline: string;
-  followers: string;
-  location: string;
-}[] = [
-  { id: 1, image: "/images/Jennifer_Alford.jpeg", tagline: "Jennifer Alford", followers: "1.9k Followers", location: "Iowa, US" },
-  { id: 2, image: "/images/Alex_Gettlin.jpg", tagline: "Alex Gettlin", followers: "3.3k Followers", location: "Georgia, US" },
-  { id: 3, image: "/images/Jessalyn_Tester.jpeg", tagline: "Jessalyn Tester", followers: "17k Followers", location: "Ohio, US" },
-  { id: 4, image: "/comunity-avatr.jpg", tagline: "Ryan Barned", followers: "lorem Followers", location: "lorem , lorem" },
-  { id: 5, image: "/images/Sarah-2.6k-Twitter.png", tagline: "Sarah Franz", followers: "31.5k Followers", location: "Alabama, US" },
-  { id: 6, image: "/comunity-avatr.jpg", tagline: "Mannie Williams", followers: "lorem Followers", location: "lorem , lorem" },
-  { id: 7, image: "/comunity-avatr.jpg", tagline: "Kendra Morancy", followers: "lorem Followers", location: "lorem , lorem" },
-  { id: 8, image: "/comunity-avatr.jpg", tagline: "James Schneider", followers: "lorem Followers", location: "lorem , lorem" },
-
+const members = [
+  { image: "/images/Jennifer_Alford.jpeg", tagline: "Jennifer Alford", followers: "1.9k Followers", location: "Iowa, US" },
+  { image: "/images/Alex_Gettlin.jpg", tagline: "Alex Gettlin", followers: "3.3k Followers", location: "Georgia, US" },
+  { image: "/images/Jessalyn_Tester.jpeg", tagline: "Jessalyn Tester", followers: "17k Followers", location: "Ohio, US" },
+  { image: "/comunity-avatr.jpg", tagline: "Ryan Barned", followers: "lorem Followers", location: "lorem , lorem" },
+  { image: "/images/Sarah-2.6k-Twitter.png", tagline: "Sarah Franz", followers: "31.5k Followers", location: "Alabama, US" },
+  { image: "/comunity-avatr.jpg", tagline: "Mannie Williams", followers: "lorem Followers", location: "lorem , lorem" },
+  { image: "/comunity-avatr.jpg", tagline: "Kendra Morancy", followers: "lorem Followers", location: "lorem , lorem" },
+  { image: "/comunity-avatr.jpg", tagline: "James Schneider", followers: "lorem Followers", location: "lorem , lorem" },
 ];
 
 const AffiliatePage = () => {
@@ -286,34 +279,28 @@ const AffiliatePage = () => {
                 </p>
 
                 <div className="mt-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 transition-all duration-500 ease-in-out">
-                {visibleCards.map((phone, index) => (
+                {members.map((phone, index) => (
                     <div
-                    key={index}
-                    className="relative rounded-xl overflow-hidden shadow-md h-[350px]"
+                        key={index}
+                        className="relative rounded-xl overflow-hidden shadow-md h-[350px]"
                     >
-                    <Image
+                        <Image
                         src={phone.image}
                         alt="Profile Image"
                         layout="fill"
                         objectFit="cover"
-                        objectPosition={phone.id === 10 ? 'top' : 'center'}
+                        objectPosition={index === 9 ? 'top' : 'center'}
                         className="absolute inset-0 z-0"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[linear-gradient(180.41deg,rgba(242,72,26,0)_3.77%,rgba(242,72,26,0.7)_49.77%,#F67112_99.64%)]"></div>
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[linear-gradient(180.41deg,rgba(242,72,26,0)_3.77%,rgba(242,72,26,0.7)_49.77%,#F67112_99.64%)]"></div>
 
-                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 text-white text-center space-y-1 w-[90vw] sm:w-auto max-w-xs">
-                        <h3 className="text-lg font-extrabold truncate whitespace-nowrap">
-                        {phone.tagline}
-                        </h3>
-                        <p className="text-sm truncate whitespace-nowrap">
-                        {phone.followers}
-                        </p>
-                        <p className="truncate whitespace-nowrap">
-                        {phone.location}
-                        </p>
+                        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 text-white text-center space-y-1 w-[90vw] sm:w-auto max-w-xs">
+                        <h3 className="text-lg font-extrabold truncate whitespace-nowrap">{phone.tagline}</h3>
+                        <p className="text-sm truncate whitespace-nowrap">{phone.followers}</p>
+                        <p className="truncate whitespace-nowrap">{phone.location}</p>
+                        </div>
                     </div>
-                    </div>
-                ))}
+                    ))}
                 </div>
 
             </div>
