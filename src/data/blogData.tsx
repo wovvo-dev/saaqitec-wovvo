@@ -8,7 +8,7 @@ const blogData = [
         seo_title:"Why UGC is Booming in 2025 (And How You Can Ride the Wave)",
         meta_description:"UGC is exploding in 2025. Learn why now is the perfect time to start creating and how WOVVO can help you land paid gigs faster.",
         caption: "Let’s be real. If you’ve ever posted a product review on TikTok or shared a skincare routine on Instagram, congrats. You’re already a UGC creator.",
-        image: "01.png",
+        image: "01.jpg",
         description: `<p>Let’s be real. If you’ve ever posted a product review on TikTok or shared a skincare routine on Instagram, congrats. You’re already a UGC creator.</p>
 <p>User-generated content (UGC) is having a major moment in 2025. Brands want authentic content that doesn’t feel like an ad. They want real creators, not influencers with a million followers. The demand is bigger than ever, and that’s exactly where you come in.</p>
 <h3>So, why is UGC taking off now?</h3>
