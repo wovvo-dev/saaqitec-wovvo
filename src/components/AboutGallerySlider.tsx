@@ -22,7 +22,7 @@ const generateImageArray = (start: number, end: number) => {
 // ];
 
 const AboutGallerySlider = () => {
-  const allImages = generateImageArray(1, 12);
+  const allImages = generateImageArray(1, 16);
   const half = Math.ceil(allImages.length / 2);
   const firstRow = allImages.slice(0, half);
   const secondRowImages = allImages.slice(half);
