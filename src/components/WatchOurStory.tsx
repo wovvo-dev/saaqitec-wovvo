@@ -52,7 +52,7 @@ export default function WatchOurStory() {
             className="w-full h-full object-cover"
           />
           <div
-            className="absolute inset-0 z-10 pointer-events-none"
+            className="absolute inset-0 z-10 pointer-events-none opacity-[0]"
             style={{
               background: `
                 radial-gradient(circle, rgba(255,255,255,0) 20%, rgba(255,255,255,0.7) 80%), 

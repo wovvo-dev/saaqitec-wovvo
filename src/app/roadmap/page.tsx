@@ -1,15 +1,7 @@
 'use client'
 import TimelineSection from "src/components/TimelineSection";
-import { useEffect } from 'react';
 
 const Roadmap = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.lightwidget.com/widgets/lightwidget.js';
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
   return (
     <main className="relative bg-white pt-24 pb-16">
       {/* Hero Banner */}
@@ -43,34 +35,30 @@ const Roadmap = () => {
 
       {/* Instagram Section */}
       <section id="about_gallery" className="pt-10 md:pt-12 md:mb-[0px] mb-[-80px]">
-        <div>
-          {/* Desktop Widget */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mx-auto mb-10">
+            <h2 className="text-base font-semibold text-primary tracking-wide uppercase">Follow Us on Instagram</h2>
+            <p className="mt-2 text-4xl font-bold sm:text-4xl">
+              Get a Glimpse of <span className="gradient-text">Our Latest Work</span>
+            </p>
+            <p className="mt-4 text-md md:text-xl text-gray-600">
+              <a href="https://www.instagram.com/wovvo.ai" target="_blank">wovvo@ai</a>
+            </p>
+          </div>
+        </div>
+        <div className="w-full h-[400px] md:h-[190px] overflow-hidden">
           <iframe
-            src="//lightwidget.com/widgets/e7701694e15a525cb556a8ff06fe5edf.html"
-            scrolling="no"
-            allowTransparency={true}
-            className="lightwidget-widget hidden md:block"
-            style={{
-              width: '100%',
-              border: '0',
-              overflow: 'hidden',
-            }}
-          ></iframe>
-
-          {/* Mobile Widget */}
-          <iframe
-            src="//lightwidget.com/widgets/3be78adf3c995820a55a07ec58e0682c.html"
-            scrolling="no"
-            allowTransparency={true}
-            className="lightwidget-widget block md:hidden"
-            style={{
-              width: '100%',
-              border: '0',
-              overflow: 'hidden',
-            }}
+            src="https://pulsemarketing.cloud/wovvoai_instagrame/"
+            title="Instagram Gallery"
+            width="100%"
+            height="100%"
+            style={{ border: 'none' }}
+            allowFullScreen
+            loading="lazy"
           ></iframe>
         </div>
       </section>
+
     </main>
   )
 }

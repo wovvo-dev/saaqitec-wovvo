@@ -14,7 +14,7 @@ const FounderPage = () => {
       </div>
 
       <SocialProof
-        view={16}
+        view={34}
         title="Forever Founders:"
         highlight="The Original 80"
         subtitle="The creators who shaped Wovvo from the ground up"

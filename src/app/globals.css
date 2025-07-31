@@ -262,7 +262,7 @@
   }
 
   .niches-slider .item {
-    @apply bg-gradient-to-r from-[#F34D12] to-[#F87C10] flex flex-col gap-[20px] p-[7px] rounded-[15px];
+    @apply bg-gradient-to-r from-[#F34D12] to-[#F87C10] flex flex-col gap-[20px] p-[7px] rounded-[15px] min-w-[220px] mx-[10px];
   }
 
   .niches-slider .item img {
@@ -676,6 +676,33 @@
   .uscgmemes p span a::before {
     content: "";
     @apply absolute bottom-0 left-0 w-full h-[1px] bg-white;
+  }
+
+  .gif-image {
+    -webkit-box-shadow: 0px 0px 3px 1px #00000075;
+    box-shadow: 0px 0px 3px 1px #00000075;
+  }
+
+  .ucg-bussiness-community h2 {
+    font-size: 40px;
+  }
+
+  #watch-our-story {
+    @apply relative;
+  }
+
+  #watch-our-story::before {
+    content: "";
+    @apply absolute left-0 top-0 w-full z-[1];
+    height: 20%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  }
+
+  #watch-our-story::after {
+    content: "";
+    @apply absolute left-0 bottom-0 w-full z-[1];
+    height: 20%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
   }
 
 }
@@ -1123,6 +1150,9 @@
 
   .creator-two-wrapper .item div p:nth-child(1) span {
       font-size: 25px;
+  }
+  .socila-prof-mb-img{
+    object-position: top center !important;
   }
 
 }

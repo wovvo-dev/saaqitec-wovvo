@@ -96,36 +96,42 @@ const Navbar: React.FC = () => {
               <div className="logo-mb">
                 <Logo />
               </div>
-              <button
+              <Link
+                href={"/"}
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
+              >
+                Home
+              </Link>
+              {/* <button
                 onClick={() => handleNavigation("pricing")}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Pricing
-              </button>
-              <Link
+              </button> */}
+              {/* <Link
                 href={"/about"}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 About
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href={"/blog"}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Blog
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href={"/press"}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Press
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href={"/roadmap"}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Roadmap
-              </Link>
+              </Link> */}
               <Link
                 href={"/our-founders"}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
@@ -144,18 +150,18 @@ const Navbar: React.FC = () => {
               >
                 Watch Our Story
               </button>
-              <button
+              {/* <button
                 onClick={() => handleNavigation("features")}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Features
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 onClick={() => handleNavigation("faqs")}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 FAQs
-              </button>
+              </button> */}
               <button
                 onClick={() => {
                   sendGAEvent("event", "Join", { value: "User Joined!" });
@@ -165,6 +171,11 @@ const Navbar: React.FC = () => {
                 className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors"
               >
                 Login
+              </button>
+              <button
+                className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                Sign Up
               </button>
             </div>
           </div>

@@ -206,7 +206,7 @@ const AffiliatePage = () => {
             <img src="twiter-banner.png"/>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center ucg-bussiness-community bg-white rounded-3xl p-10 bg-[url('/ucg-bassness.jpg')] bg-cover bg-center shadow-[0px_2px_8px_0px_rgba(99,99,99,0.2)]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center ucg-bussiness-community bg-white rounded-3xl p-10 bg-[url('/ucg-bassness.jpg')] bg-cover bg-center shadow-[0px_2px_8px_0px_rgba(99,99,99,0.2)]">
             <div className='contentwrapper-inner'>
                 <div className="flex items-center mb-4">
                 <span className="text-base font-semibold text-primary tracking-wide uppercase">
@@ -216,7 +216,7 @@ const AffiliatePage = () => {
                 </div>
 
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
-                    <span className="gradient-text">Income And Your UGC Business</span><br />And Be Part Of Community?
+                    <span className="gradient-text">Income And Your UGC Business</span><br /> And Be Part Of Community?
                 </h2>
 
                 <button
@@ -282,7 +282,7 @@ const AffiliatePage = () => {
                 {members.map((phone, index) => (
                     <div
                         key={index}
-                        className="relative rounded-xl overflow-hidden shadow-md h-[350px]"
+                        className="relative rounded-xl overflow-hidden shadow-md h-[384px]"
                     >
                         <Image
                         src={phone.image}
@@ -290,7 +290,7 @@ const AffiliatePage = () => {
                         layout="fill"
                         objectFit="cover"
                         objectPosition={index === 9 ? 'top' : 'center'}
-                        className="absolute inset-0 z-0"
+                        className="absolute inset-0 z-0 socila-prof-mb-img"
                         />
                         <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[linear-gradient(180.41deg,rgba(242,72,26,0)_3.77%,rgba(242,72,26,0.7)_49.77%,#F67112_99.64%)]"></div>
 

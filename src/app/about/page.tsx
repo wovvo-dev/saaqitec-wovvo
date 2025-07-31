@@ -19,11 +19,11 @@ const aboutpage = () => {
                 <p className="mt-2 text-4xl font-bold sm:text-4xl">
                     Mission & <span className="gradient-text">Origin</span>
                 </p>
-                <p className="mt-4 text-md md:text-xl text-gray-600">
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">
                     WOVVO was created to fill a real gap in the creator space: a lack of trustworthy, centralized places to find real, paid UGC jobs. Our mission is to build a smart, easy-to-use tool that helps creators turn their content into consistent income.
                 </p>
-                <p className="mt-4 text-md md:text-xl text-gray-600">Instead of chasing down gigs through sketchy DMs or dead job boards, WOVVO gives creators a clean, searchable experience filled with legit opportunities, time-saving tools, and community support. We’re here to make the business side of being a creator easier, faster, and more sustainable.</p>
-                <p className="mt-4 text-md md:text-xl text-gray-600 max-w-[95%]">This all started with a small team of creators and marketers who got tired of the chaos. We knew there had to be a better way, so we built it.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">Instead of chasing down gigs through sketchy DMs or dead job boards, WOVVO gives creators a clean, searchable experience filled with legit opportunities, time-saving tools, and community support. We’re here to make the business side of being a creator easier, faster, and more sustainable.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600 max-w-[95%]">This all started with a small team of creators and marketers who got tired of the chaos. We knew there had to be a better way, so we built it.</p>
             </div>
         </section>
 
@@ -33,9 +33,9 @@ const aboutpage = () => {
                 <p className="mt-2 text-4xl font-bold sm:text-4xl">
                     For The Creator <span className="gradient-text">Economy</span>
                 </p>
-                <p className="mt-4 text-md md:text-xl text-gray-600">We see a future where creators are treated like professionals, not just influencers.</p>
-                <p className="mt-4 text-md md:text-xl text-gray-600">Our vision is to support the new wave of UGC talent by building the infrastructure that powers the modern creator’s career. WOVVO isn’t just a job feed. It’s a trusted tool to help you pitch smarter, get paid faster, and grow your business on your own terms.</p>
-                <p className="mt-4 text-md md:text-xl text-gray-600">As the creator economy grows, so does the need for structure, transparency, and support. WOVVO is here to lead that shift, giving creators the power, tools, and freedom to build real careers doing what they love.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">We see a future where creators are treated like professionals, not just influencers.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">Our vision is to support the new wave of UGC talent by building the infrastructure that powers the modern creator’s career. WOVVO isn’t just a job feed. It’s a trusted tool to help you pitch smarter, get paid faster, and grow your business on your own terms.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">As the creator economy grows, so does the need for structure, transparency, and support. WOVVO is here to lead that shift, giving creators the power, tools, and freedom to build real careers doing what they love.</p>
             </div>
             <div className="creator-enomu-value">
                 <div className="item-box">
@@ -130,9 +130,9 @@ const aboutpage = () => {
                 <p className="mt-2 text-4xl font-bold sm:text-4xl">
                     Built by Creators, <span className="gradient-text">Not Corporations</span>
                 </p>
-                <p className="mt-4 text-md md:text-xl text-gray-600">Hey, we’re Paula Hlavacek and Ian Slater, the duo behind WOVVO. Paula is a UGC coach, creator, and branding expert who knows what it takes to stand out and get hired. Ian comes from a tech and development background and has worked with global companies, building software and systems that scale.</p>
-                <p className="mt-4 text-md md:text-xl text-gray-600">Together, we built WOVVO to be the tool we always wished existed. It’s designed to help creators find real, paid gigs faster, connect with brands, and grow their creator careers with confidence.</p>
-                <p className="mt-4 text-md md:text-xl text-gray-600">We’re here to make things easier, smarter, and a lot more fun for creators everywhere.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">Hey, we’re Paula Hlavacek and Ian Slater, the duo behind WOVVO. Paula is a UGC coach, creator, and branding expert who knows what it takes to stand out and get hired. Ian comes from a tech and development background and has worked with global companies, building software and systems that scale.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">Together, we built WOVVO to be the tool we always wished existed. It’s designed to help creators find real, paid gigs faster, connect with brands, and grow their creator careers with confidence.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">We’re here to make things easier, smarter, and a lot more fun for creators everywhere.</p>
             </div>
             <div className="build-img">
                 <img src="build.png" alt="build" />

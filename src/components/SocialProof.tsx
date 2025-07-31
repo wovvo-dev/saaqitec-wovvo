@@ -44,7 +44,7 @@ const SocialProof = ({
                     {visibleCards.map((phone, index) => (
                         <div
                             key={index}
-                            className="relative rounded-xl overflow-hidden shadow-md h-[350px]"
+                            className="relative rounded-xl overflow-hidden shadow-md h-[384px]"
                         >
                             <Image
                                 src={phone.image}
@@ -52,7 +52,7 @@ const SocialProof = ({
                                 layout="fill"
                                 objectFit="cover"
                                 objectPosition={phone.id === 10 ? 'top' : 'center'}
-                                className="absolute inset-0 z-0"
+                                className="absolute inset-0 z-0 socila-prof-mb-img"
                             />
                             <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[linear-gradient(180.41deg,rgba(242,72,26,0)_3.77%,rgba(242,72,26,0.7)_49.77%,#F67112_99.64%)]"></div>
 

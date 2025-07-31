@@ -93,7 +93,7 @@ export default function FAQSection() {
               Get Started
             </button>
           </div>
-          <div className="gif-image shadow-[0px_0px_6px_0px_#00000078] rounded-[10px] overflow-hidden w-full">
+          <div className="gif-image rounded-[10px] overflow-hidden w-full">
             <img src="banner.gif" />
           </div>
         </section>

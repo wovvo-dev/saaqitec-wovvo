@@ -13,7 +13,7 @@ const HomeBlog = () => {
                 </p>
               </div>
               <Link href={"/blog"}>
-                <button className="inline-flex items-center justify-center px-6 py-2 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors">
+                <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors text-[16px]">
                 See All
                 </button>
               </Link> 
