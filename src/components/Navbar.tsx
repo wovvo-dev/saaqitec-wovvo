@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
               <img src="menuopn.svg" alt="" />
             </div>
 
-            <div className="hidden lg:flex items-center justify-center space-x-3 mb-menu">
+            <div className="hidden lg:flex items-center md:justify-center space-x-3 mb-menu">
               <div className="menuclosebtn">
                 <img src="menuclose.svg" alt="" />
               </div>

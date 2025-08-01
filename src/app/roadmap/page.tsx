@@ -23,7 +23,7 @@ const Roadmap = () => {
       <TimelineSection />
 
       {/* Call to Action */}
-      <div className="creue-cto py-24 bg-gradient-to-r from-primary to-secondary text-white flex justify-center items-center">
+      <div className="md:mt-[50px] creue-cto py-24 bg-gradient-to-r from-primary to-secondary text-white flex justify-center items-center">
         <div className="cta-form max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3>Product Updates</h3>
           <div className="searchbar w-[350px] md:w-[600px] relative mt-0">
@@ -41,6 +41,7 @@ const Roadmap = () => {
           </p>
         </div>
       </div>
+
       {/* Instagram Section */}
       <section id="about_gallery" className="pt-10 md:pt-12 md:mb-[0px] mb-[-20px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

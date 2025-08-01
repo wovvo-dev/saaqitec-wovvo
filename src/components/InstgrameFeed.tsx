@@ -69,7 +69,7 @@ const InstagramFeed = () => {
                 href={item.permalink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative group block w-full h-[250px] md:h-[350px] rounded overflow-hidden instafedd-item"
+                className="relative group block w-full h-[220px] md:h-[350px] rounded overflow-hidden instafedd-item"
               >
                 <img
                   src={item.media_type === 'VIDEO' ? item.thumbnail_url! : item.media_url}

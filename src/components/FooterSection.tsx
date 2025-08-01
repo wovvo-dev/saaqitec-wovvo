@@ -35,7 +35,7 @@ const FooterSection: React.FC = () => {
             The platform that connects UGC creators with brands looking for authentic content.
           </p>
 
-          <div className="footer-link-wrapper grid grid-cols-1 sm:grid-cols-5 gap-10">
+          <div className="footer-link-wrapper grid grid-cols-1 sm:grid-cols-5 gap-5 md:gap-10">
 
             <div className="item">
               <h3>Company</h3>
