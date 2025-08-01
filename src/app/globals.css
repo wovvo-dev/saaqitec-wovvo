@@ -443,7 +443,7 @@
   }
 
   .build-img img {
-    @apply -mt-10 h-[110%] object-cover;
+    @apply -mt-10 h-[450px] object-cover;
   }
 
   .about-gallery .swiper-slide {

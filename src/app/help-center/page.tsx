@@ -234,8 +234,8 @@ const HelpCenterPage = () => {
             }}
           />
           <img
-            className="absolute top-1/2 left-0 translate-x-[22px] -translate-y-1/2"
-            src="/search.png"
+            className="absolute top-1/2 left-0 translate-x-[22px] -translate-y-1/2 w-[20px]"
+            src="/search.svg"
             alt="search-icon"
           />
           <button
