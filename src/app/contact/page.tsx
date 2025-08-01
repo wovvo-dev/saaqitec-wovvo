@@ -78,17 +78,17 @@ const ContactPage = () => {
         </div>
         <div className="class-faq-bar max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-[70px]">
             <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
-                <img src="contact-email.png" alt="" />
+                <img src="contact-email.svg" className="w-[80px]" alt="" />
                 <h5>Email</h5>
                 <a href="mailto:team@wovvo.ai">Team@wovvo.ai</a>
             </div>
             <div className="item bg-gradient-to-r from-[#EE2720] to-[#F98C0D] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
-                <img src="contact-inst.png" alt="" />
+                <img src="contact-inst.svg" className="w-[80px]" alt="" />
                 <h5 className='text-white'>DM Us</h5>
                 <a href="https://www.instagram.com/wovvo.ai" target="_blank" className='text-white'>@wovvo.ai</a>
             </div>
             <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
-                <img src="contact-twiter.png" alt="" />
+                <img src="contact-twiter.svg" className="w-[80px]" alt="" />
                 <h5>Tweet Us</h5>
                 <a href="https://x.com/wovvoai">@wovvoai</a>
             </div>
