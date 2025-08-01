@@ -11,16 +11,19 @@ const SocialProof = ({
     title = 'These Creators Said',
     highlight = 'Yes to Wovvo',
     subtitle = 'Creators you trust. A platform they believe in.',
+    animate = true, // New prop
 }) => {
     const [startIndex, setStartIndex] = useState(0);
     const totalPhones = members.length;
 
     useEffect(() => {
+        if (!animate) return; // Skip if animation is false
+
         const interval = setInterval(() => {
             setStartIndex((prev) => (prev + view) % totalPhones);
         }, ROTATION_INTERVAL);
         return () => clearInterval(interval);
-    }, [view, totalPhones]);
+    }, [animate, view, totalPhones]);
 
     const visibleCards = members
         .slice(startIndex, startIndex + view)

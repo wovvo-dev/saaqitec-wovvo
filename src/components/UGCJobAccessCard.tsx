@@ -22,7 +22,7 @@ const UGCJobAccessCard = () => {
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
-            Your shortcut to <span className="gradient-text">finding paid UGC work</span>
+            Your Shortcut to <span className="gradient-text">Finding Paid UGC Work</span>
           </h2>
 
           <p className="text-slate-700 text-lg mb-8 text-center">

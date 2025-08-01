@@ -1,7 +1,15 @@
 'use client'
+import { useEffect } from 'react';
 import TimelineSection from "src/components/TimelineSection";
 
 const Roadmap = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <main className="relative bg-white pt-24 pb-16">
       {/* Hero Banner */}
@@ -14,12 +22,12 @@ const Roadmap = () => {
       <TimelineSection />
 
       {/* Call to Action */}
-      <div className="creue-cto bg-[url(/cta-crue.jpg)] min-h-[475px] bg-cover bg-center flex justify-center items-center">
+      <div className="creue-cto py-24 bg-gradient-to-r from-primary to-secondary text-white flex justify-center items-center">
         <div className="cta-form max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h3>Get Notified When New Tools Go Live</h3>
-          <div className="searchbar w-[90%] max-w-[600px] relative mt-0">
+          <h3>Product Updates</h3>
+          <div className="searchbar w-[350px] md:w-[600px] relative mt-0">
             <input
-              className="placeholder-white bg-black w-full h-[50px] outline-none border-none px-[30px] text-white text-base font-light rounded-lg"
+              className="placeholder-black bg-white w-full h-[50px] outline-none border-none px-[30px] text-black text-base font-light rounded-lg"
               type="email"
               placeholder="Your Email Address"
             />
@@ -28,7 +36,7 @@ const Roadmap = () => {
             </button>
           </div>
           <p>
-            Stay ahead of the curve by getting notified as soon as new tools launch. Be the first to explore innovative features designed to boost your productivity. Subscribe now and never miss an update on the latest tools going live!
+            Be first to know when new tools drop. <br /> Boost your productivity.
           </p>
         </div>
       </div>
@@ -39,28 +47,19 @@ const Roadmap = () => {
           <div className="text-center mx-auto mb-10">
             <h2 className="text-base font-semibold text-primary tracking-wide uppercase">Follow Us on Instagram</h2>
             <p className="mt-2 text-4xl font-bold sm:text-4xl">
-              Get a Glimpse of <span className="gradient-text">Our Latest Work</span>
+              See What We've <span className="gradient-text">Been Working On</span>
             </p>
             <p className="mt-4 text-md md:text-xl text-gray-600">
-              <a href="https://www.instagram.com/wovvo.ai" target="_blank">wovvo@ai</a>
+              <a href="https://www.instagram.com/Wovvo.ai" target="_blank">Wovvo.ai</a>
             </p>
           </div>
-        </div>
-        <div className="w-full h-[400px] md:h-[190px] overflow-hidden">
-          <iframe
-            src="https://pulsemarketing.cloud/wovvoai_instagrame/"
-            title="Instagram Gallery"
-            width="100%"
-            height="100%"
-            style={{ border: 'none' }}
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
+
+          {/* ✅ Elfsight Embed */}
+          <div className="elfsight-app-936ba49a-b1ac-493c-87e1-d2557d0fe4c2" data-elfsight-app-lazy />
         </div>
       </section>
-
     </main>
-  )
-}
+  );
+};
 
 export default Roadmap;

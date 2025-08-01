@@ -36,18 +36,16 @@ const FooterSection: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap justify-center space-x-3 mt-8">
-            <button onClick={() => handleNavigation("pricing")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">
-              Pricing
-            </button>
             <Link href="/about" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">About</Link>
-            <Link href="/blog" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Blog</Link>
-            <Link href="/press" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Press</Link>
-            <Link href="/roadmap" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Roadmap</Link>
-            <Link href="/our-founders" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Our Founders</Link>
             <Link href="/affiliate" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Affiliate</Link>
-            <button onClick={() => handleNavigation("watch-our-story")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Watch Our Story</button>
-            <button onClick={() => handleNavigation("features")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Features</button>
+            <Link href="/blog" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Blog</Link>
             <button onClick={() => handleNavigation("faqs")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">FAQs</button>
+            <button onClick={() => handleNavigation("features")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Features</button>
+            <Link href="/our-founders" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Our Founders</Link>
+            <Link href="/press" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Press</Link>
+            <button onClick={() => handleNavigation("pricing")} className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors">Pricing </button>
+            <Link href="/roadmap" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Roadmap</Link>
+            <button onClick={() => handleNavigation("watch-our-story")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Watch Our Story</button>
           </div>
 
           <div className="flex space-x-6 mt-8">
@@ -76,15 +74,15 @@ const FooterSection: React.FC = () => {
             </p>
             <p className="text-gray-400 text-sm">Prices shown are in USD.</p>
             <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1 text-sm text-gray-400 text-center">
-              <Link href="/terms-and-conditions" className="underline underline-offset-4">Terms and Conditions</Link>
-              <span>|</span>
-              <Link href="/privacy-policy" className="underline underline-offset-4">Privacy Policy</Link>
+              <Link href="/compliance" className="underline underline-offset-4">Compliance &amp; Platform Disclaimer</Link>
               <span>|</span>
               <Link href="/cookie-declaration" className="underline underline-offset-4">Cookie Declaration</Link>
               <span>|</span>
-              <Link href="/compliance" className="underline underline-offset-4">Compliance &amp; Platform Disclaimer</Link>
-              <span>|</span>
               <Link href="/dmac" className="underline underline-offset-4">DMCA &amp; Content Removal Policy</Link>
+              <span>|</span>
+              <Link href="/privacy-policy" className="underline underline-offset-4">Privacy Policy</Link>
+              <span>|</span>
+              <Link href="/terms-and-conditions" className="underline underline-offset-4">Terms and Conditions</Link>
             </div>
           </div>
         </div>

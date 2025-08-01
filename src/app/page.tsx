@@ -51,6 +51,7 @@ export default function Home() {
             title="These Creators Said"
             highlight="Yes to Wovvo"
             subtitle="Creators you trust. A platform they believe in."
+            animate={true} // or false
           />
         </div>
         {/* <TestimonialsSection />

@@ -5,7 +5,6 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// Helper to generate image paths
 const generateImageArray = (start: number, end: number) => {
   const images = [];
   for (let i = start; i <= end; i++) {
@@ -15,17 +14,8 @@ const generateImageArray = (start: number, end: number) => {
   return images;
 };
 
-// const youtubeVideos = [
-//   'https://www.youtube.com/embed/Ef1ta1qpm2s?si=87LbI2FrrTUP_ZoO',
-//   'https://www.youtube.com/embed/Ef1ta1qpm2s?si=87LbI2FrrTUP_ZoO',
-//   'https://www.youtube.com/embed/Ef1ta1qpm2s?si=87LbI2FrrTUP_ZoO',
-// ];
-
 const AboutGallerySlider = () => {
-  const allImages = generateImageArray(1, 16);
-  const half = Math.ceil(allImages.length / 2);
-  const firstRow = allImages.slice(0, half);
-  const secondRowImages = allImages.slice(half);
+  const allImages = generateImageArray(1, 14);
 
   const [modal, setModal] = useState(false);
   const [modalImgs, setModalImgs] = useState<string[]>([]);
@@ -63,76 +53,39 @@ const AboutGallerySlider = () => {
 
   return (
     <div className="about-gallery">
-      {/* Row 1: Images only */}
+      {/* 🌀 Marquee-style Main Slider (autoplay only) */}
       <Swiper
-        modules={[Navigation, Autoplay]}
-        navigation
+        // modules={[Navigation]}
+        // navigation
+        modules={[Autoplay]}
         centeredSlides={false}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        speed={1000}
+        speed={8000}
         loop
         breakpoints={breakpoints}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+        }}
+        slidesPerView={'auto'}
+        allowTouchMove={false}
         className="overflow-visible"
       >
-        {firstRow.map((img, idx) => (
-          <SwiperSlide key={img}>
+        {allImages.map((img, idx) => (
+          <SwiperSlide
+            key={img}
+            style={{ width: 'auto' }} // Continuous scrolling look
+          >
             <img
               src={img}
               alt=""
               onClick={() => openModal(allImages, idx)}
-              className="cursor-pointer object-cover w-full rounded-[10px]"
+              className="cursor-pointer object-cover w-auto rounded-[10px]"
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Row 2: Images + YouTube Shorts */}
-      <Swiper
-        modules={[Navigation, Autoplay]}
-        navigation
-        centeredSlides={false}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-          reverseDirection: true,
-        }}
-        speed={1000}
-        loop
-        breakpoints={breakpoints}
-        className="overflow-visible mt-[20px]"
-      >
-        {/* Images */}
-        {secondRowImages.map((img, idx) => (
-          <SwiperSlide key={img}>
-            <img
-              src={img}
-              alt=""
-              onClick={() => openModal(allImages, half + idx)}
-              className="cursor-pointer object-cover w-full rounded-[10px]"
-            />
-          </SwiperSlide>
-        ))}
-
-        {/* YouTube Shorts */}
-        {/* {youtubeVideos.map((url, idx) => {
-          const embedUrl = url.replace('/shorts/', '/embed/').split('?')[0];
-          return (
-            <SwiperSlide key={`yt-${idx}`} className="youtube-gallery-item">
-              <div className="aspect-[9/11.5] w-full rounded-[10px] overflow-hidden">
-                <iframe
-                  src={embedUrl}
-                  title={`YouTube Shorts ${idx + 1}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full border-0"
-                />
-              </div>
-            </SwiperSlide>
-          );
-        })} */}
-      </Swiper>
-
-      {/* Modal for Image View */}
+      {/* 🖼 Modal for Image View */}
       {modal && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-50">
           <div className="relative bg-white max-w-4xl w-full p-4 rounded-lg galler-pop-up-slider">

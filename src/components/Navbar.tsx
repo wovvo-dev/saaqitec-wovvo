@@ -139,6 +139,12 @@ const Navbar: React.FC = () => {
                 Our Founders
               </Link>
               <Link
+                href={"/help-center"}
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
+              >
+                Help Center
+              </Link>
+              <Link
                 href={"/affiliate"}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
@@ -150,6 +156,12 @@ const Navbar: React.FC = () => {
               >
                 Watch Our Story
               </button>
+              <Link
+                href={"/contact"}
+                className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
+              >
+                Contact
+              </Link>
               {/* <button
                 onClick={() => handleNavigation("features")}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"

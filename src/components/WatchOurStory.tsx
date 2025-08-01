@@ -46,10 +46,13 @@ export default function WatchOurStory() {
     <section className="relative min-h-screen bg-black overflow-hidden group" id="watch-our-story">
       {!isPlaying && (
         <div className="absolute inset-0 w-full h-full z-0">
-          <img
-            src="/videos/giffy.gif"
-            alt="GIF animation"
-            className="w-full h-full object-cover"
+          <video
+            src="/videos/placeholder.mp4"
+            loop
+            playsInline
+            autoPlay
+            muted
+            className={`w-full h-full object-cover`}
           />
           <div
             className="absolute inset-0 z-10 pointer-events-none opacity-[0]"

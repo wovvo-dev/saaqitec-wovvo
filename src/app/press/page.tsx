@@ -151,7 +151,7 @@ const PressPage = () => {
                     <div className="share-wrapper-inner group absolute right-0 bottom-0 h-[21px] w-[70px] hover:h-[120px] transition-all duration-300 ease-in-out cursor-pointer">
                       <div className="share-btn absolute bottom-0 flex items-center gap-1 text-[14px] font-normal text-gray-800">
                         <img
-                          src="/sahare-icon.png"
+                          src="/sahare-icon.svg"
                           className="w-4"
                           alt="share"
                         />{" "}

@@ -25,7 +25,7 @@ const AffiliatePage = () => {
             </h2>
         </div>
 
-        <div className="whatmakewovvo max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 flex flex-col gap-[50px] items-center">
+        <div className="whatmakeWovvo max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 flex flex-col gap-[50px] items-center">
             <div className="text-center mx-auto">
                 <h2 className="text-base font-semibold text-primary tracking-wide uppercase">PERKS OF Creators Joining Wovvo</h2>
                 <p className="mt-2 text-4xl font-bold sm:text-4xl">
@@ -67,7 +67,7 @@ const AffiliatePage = () => {
 
         <div className="affliate-signup py-12 md:py-24">
             <div className="text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-base font-semibold text-primary text-white uppercase">WOVVO</h2>
+                <h2 className="text-base font-semibold text-primary text-white uppercase">Wovvo</h2>
                 <p className="mt-2 text-4xl font-bold sm:text-4xl text-white">
                     Affiliate Sign-Up Requirements
                 </p>
@@ -216,13 +216,13 @@ const AffiliatePage = () => {
                 </div>
 
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
-                    <span className="gradient-text">Income And Your UGC Business</span><br /> And Be Part Of Community?
+                    <span className="gradient-text">Income and Your UGC Business</span><br /> and Join the Community?
                 </h2>
 
                 <button
                 className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors"
                 >
-                Join yearly → Access community
+                Join Now - Access Community
                 </button>
             </div>
         </div>
@@ -237,18 +237,18 @@ const AffiliatePage = () => {
             <div className="list-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[15px] w-[80%] mx-auto">
                 <div className="item">
                     <ul>
-                        <li>Commission payouts go out bi-weekly to the payment method you’ve added</li>
-                        <li>You must have an active annual Wovvo membership to earn commission</li>
-                        <li>Commissions apply only to first-year membership sales through your link</li>
-                        <li>Refunds or cancellations during the trial will cancel your commission</li>
+                        <li>Commission payouts go out bi-weekly to the payment method you’ve added.</li>
+                        <li>You must have an active annual Wovvo membership to earn commission.</li>
+                        <li>Commissions apply only to first-year membership sales through your link.</li>
+                        <li>Refunds or cancellations during the trial will cancel your commission.</li>
                     </ul>
                 </div>
                 <div className="item">
                     <ul>
-                        <li>Self-referrals and spammy tactics are not allowed (we’re watching you)</li>
-                        <li>Wovvo reserves the right to adjust rates or terms when needed</li>
-                        <li>Global creators welcome promote Wovvo from anywhere around the world</li>
-                        <li>You’ll get notified when someone signs up through your link</li>
+                        <li>Self-referrals and spammy tactics are not allowed (we’re watching you).</li>
+                        <li>Wovvo reserves the right to adjust rates or terms when needed.</li>
+                        <li>Global creators welcome promote Wovvo from anywhere around the world.</li>
+                        <li>You’ll get notified when someone signs up through your link.</li>
                     </ul>
                 </div>
             </div>
@@ -261,7 +261,7 @@ const AffiliatePage = () => {
                     Questions, UGC rants, or memes?
                     </h2>
                     <p className="text-xl mb-10 text-white/80">
-                    Send them our way <span><a href="mailto:team@wovvo.ai"><img src="whitemail.png" />team@wovvo.ai</a></span> and we’ll be happy to help.
+                    Send them our way <span><a href="mailto:team@Wovvo.ai"><img src="whitemail.png" />team@Wovvo.ai</a></span> and we’ll be happy to help.
                     </p>
                     <button
                         className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors"

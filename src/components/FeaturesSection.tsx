@@ -181,9 +181,9 @@ const FeaturesSection: React.FC = () => {
     <section id="features" className="py-12 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mx-auto mb-16">
-          <h2 className="text-base font-semibold text-primary tracking-wide uppercase features-ct-sub-hd">Wovvo isn’t another UGC platform.</h2>
+          <h2 className="text-base font-semibold text-primary tracking-wide uppercase features-ct-sub-hd">Wovvo isn’t another UGC platform</h2>
           <p className="mt-2 text-4xl font-bold sm:text-4xl features-ct-hd">
-            Wovvo is a tool that finds the<br/> jobs, <span className="gradient-text">you just simply apply.</span>
+            Wovvo is a Tool that Finds the<br/> Jobs, <span className="gradient-text">you just Simply Apply.</span>
           </p>
         </div>
         <div className="space-y-32">
