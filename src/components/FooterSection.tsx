@@ -43,7 +43,9 @@ const FooterSection: React.FC = () => {
             <button onClick={() => handleNavigation("features")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Features</button>
             <Link href="/our-founders" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Our Founders</Link>
             <Link href="/press" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Press</Link>
-            <button onClick={() => handleNavigation("pricing")} className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors">Pricing </button>
+            <button onClick={() => handleNavigation("pricing")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">
+              Pricing
+            </button>
             <Link href="/roadmap" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Roadmap</Link>
             <button onClick={() => handleNavigation("watch-our-story")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Watch Our Story</button>
           </div>
