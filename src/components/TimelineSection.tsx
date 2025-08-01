@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Users, Rocket, Code, Smartphone, Star, Zap, Shield, Bell, Filter, Search, MessageSquare, Sparkles, Plus, BellRing, SearchCheck, User2Icon, Bolt, Phone, SmartphoneCharging, SmartphoneIcon, Calendar, ListMinus, Computer, Brain } from 'lucide-react';
+import { Users, Rocket, Code, Smartphone, Star, Zap, Shield, Bell, Filter, Search, MessageSquare, Sparkles, Plus, BellRing, SearchCheck, User2Icon, Bolt, Phone, SmartphoneCharging, SmartphoneIcon, Calendar, ListMinus, Computer, Brain, StarsIcon } from 'lucide-react';
 
 const timelineItems = [
     {
-        title: 'Access Now Open (Deadline: July 15, 2025)',
+        title: 'Access Now Open (100% SOLD OUT)',
         date: 'June',
         description: 'Join the first wave of creators shaping the future of UGC job discovery.',
         icon: Users,
@@ -57,10 +57,10 @@ const timelineItems = [
                 icon: Star,
                 title: 'Access to the private creator community',
             },
-            {
-                icon: Plus,
-                title: 'Bonus: Templates, pitch guides, and outreach scripts',
-            }
+            // {
+            //     icon: Plus,
+            //     title: 'Bonus: Templates, pitch guides, and outreach scripts',
+            // }
 
         ]
     },
@@ -92,14 +92,30 @@ const timelineItems = [
                 icon: Star,
                 title: 'Priority access to early tools and beta features',
             },
+            // {
+            //     icon: Bolt,
+            //     title: 'More platforms: Expand from 5 to 10+ sources',
+            // },
+            // {
+            //     icon: Sparkles,
+            //     title: 'Premium briefs, featured tools, and spotlight listings',
+            // }
             {
-                icon: Bolt,
-                title: 'More platforms: Expand from 5 to 10+ sources',
+                icon: StarsIcon,
+                title: 'Smarter, Faster, More Personalized<br> New tools to help you apply faster and stay in control of your job feed.',
             },
             {
-                icon: Sparkles,
-                title: 'Premium briefs, featured tools, and spotlight listings',
-            }
+                icon: Rocket,
+                title: 'In-App Job Alerts<br> Live alerts while logged in. Pop-up and bell icon notifications appear for jobs that match your filters.',
+            },
+            {
+                icon: Search,
+                title: 'Suggested Job Tags (Smarter Onboarding)<br> Fast-track setup with smart job tag bundles based on your content style, niche, and platform.',
+            },
+            {
+                icon: Bell,
+                title: 'Private Profile Photo Setting<br> Add a personal touch to your dashboard with a profile image only you can see.',
+            },
         ]
     },
     {
@@ -119,6 +135,90 @@ const timelineItems = [
             {
                 icon: Zap,
                 title: 'Sleek, mobile-first experience for busy creators',
+            },
+            {
+                icon: Filter,
+                title: 'Stay Updated. Get Organized. Know What’s New.',
+            },
+            {
+                icon: User2Icon,
+                title: 'What’s New in Wovvo" Walkthrough<br> A guided pop-up tour showing every new feature. A permanent “What’s New” tab will also be added to your dashboard.',
+            },
+            {
+                icon: Star,
+                title: 'Team Access Controls<br> Invite a virtual assistant or team member to help you run your creator business inside Wovvo with limited access.',
+            },
+            {
+                icon: Phone,
+                title: 'Creator Demographic Insights<br> New onboarding questions help personalize your experience. Info like city, experience level, and income goals helps unlock smarter features.',
+            }
+        ]
+    },
+    {
+        title: 'Creator Control Center',
+        date: 'October',
+        description: 'Save, Track, Succeed',
+        icon: Computer,
+        features: [
+            {
+                icon: Smartphone,
+                title: 'Favorites + Applied Tracker<br> Save listings, track which jobs you’ve applied to, and keep your pipeline organized.',
+            },
+            {
+                icon: Bell,
+                title: 'Enhanced Affiliate Dashboard <br> Real-time tracking for clicks, conversions, commissions, and custom campaigns.',
+            },
+            {
+                icon: Zap,
+                title: 'Creator Toolkit (Beta)<br> Download pitch decks, outreach scripts, pricing guides, and other pro tools.',
+            },
+            {
+                icon: Filter,
+                title: 'Custom Notification Controls<br> Choose quiet hours, business-day alerts, or weekly digests to fit your workflow.',
+            },
+        ]
+    },
+    {
+        title: 'Built for Brands',
+        date: 'November',
+        description: 'Built for Brands, Agencies, and Power Creators',
+        icon: Calendar,
+        features: [
+            {
+                icon: Plus,
+                title: 'Business Dashboard (v1)<br> Brands and agencies can now post jobs, manage submissions, and shortlist creators in one place.',
+            },
+            {
+                icon: Bell,
+                title: 'Smart Job Suggestions (AI-Powered)<br> Wovvo learns your content style and shows better matches based on your activity and preferences.',
+            },
+            {
+                icon: Smartphone,
+                title: 'Mobile App Beta (iOS & Android)<br> Use Wovvo on the go. Apply, organize, and manage your job feed from your phone.',
+            },
+            {
+                icon: Filter,
+                title: 'Wovvo for Business: Los Angeles and New York Launch<br> Our business portal launches first in LA and NYC to help agencies and brands connect with vetted creators faster.',
+            },
+        ]
+    },
+    {
+        title: 'Built-In',
+        date: 'December',
+        description: 'Built-In Growth and Income Tools',
+        icon: Zap,
+        features: [
+            {
+                icon: MessageSquare,
+                title: 'Creator CRM (v1)<br> Track your brand outreach, past applications, and follow-ups in one streamlined view.',
+            },
+            {
+                icon: Bell,
+                title: 'Multi-Language Support Begins<br> First wave of language support launches in Spanish and French.',
+            },
+            {
+                icon: SearchCheck,
+                title: 'Holiday Campaign Hub<br> Discover and track high-volume opportunities tied to Black Friday, Cyber Monday, and year-end promotions.',
             },
         ]
     },
@@ -160,11 +260,10 @@ const TimelineSection: React.FC = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="max-w-4xl mx-auto text-center mb-16">
                     <h2 className="text-4xl font-bold mb-6">
-                        <span className="gradient-text ">Pre-Launch Memberships Open</span> — Until July 15, 2025
+                        <span className="gradient-text ">Creator+ Is Closing Soon</span> — Lock In Lifetime Access
                     </h2>
                     <p className="text-lg text-gray-600 mb-8">
-                        We're currently accepting 80 founding members ahead of our public release. Founding members receive early
-access, exclusive perks, and permanently discounted plans.
+                        Forever Founders is 100% sold out ahead of our full launch. Creator+ is the final tier available for early members. Get lifetime access, exclusive perks, and a one-time membership before it closes.
                     </p>
                 </div>
 
@@ -240,15 +339,18 @@ access, exclusive perks, and permanently discounted plans.
 
                                         <div className="grid gap-4">
                                             {item.features.map((feature, featureIndex) => (
-                                                <div
-                                                    key={featureIndex}
-                                                    className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
-                                                >
-                                                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                                                        <feature.icon className="w-5 h-5 text-primary" />
-                                                    </div>
-                                                    <h4 className="font-semibold text-gray-900">{feature.title}</h4>
+                                            <div
+                                                key={featureIndex}
+                                                className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
+                                            >
+                                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                                <feature.icon className="w-5 h-5 text-primary" />
                                                 </div>
+                                                <h4
+                                                className="font-semibold text-gray-900"
+                                                dangerouslySetInnerHTML={{ __html: feature.title }}
+                                                />
+                                            </div>
                                             ))}
                                         </div>
                                     </div>

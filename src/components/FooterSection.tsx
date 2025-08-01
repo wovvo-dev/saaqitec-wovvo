@@ -35,7 +35,54 @@ const FooterSection: React.FC = () => {
             The platform that connects UGC creators with brands looking for authentic content.
           </p>
 
-          <div className="flex flex-wrap justify-center space-x-3 mt-8">
+          <div className="footer-link-wrapper grid grid-cols-1 sm:grid-cols-5 gap-10">
+
+            <div className="item">
+              <h3>Company</h3>
+              <div className="link-wra">
+                <Link href="/about" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">About</Link>
+                <Link href="/our-founders" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Our Founders</Link>
+                <Link href="/press" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Press</Link>
+                <button onClick={() => handleNavigation("watch-our-story")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Watch Our Story</button>
+              </div>
+            </div>
+
+            <div className="item">
+              <h3>Product</h3>
+              <div className="link-wra">
+                <button onClick={() => handleNavigation("features")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Features</button>
+                <button onClick={() => handleNavigation("pricing")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Pricing</button>
+                <Link href="/roadmap" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Roadmap</Link>
+              </div>
+            </div>
+
+            <div className="item">
+              <h3>Resources</h3>
+              <div className="link-wra">
+                <Link href="/blog" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Guides</Link>
+                <Link href={"/help-center"} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Help Center</Link>
+              </div>
+            </div>
+
+            <div className="item">
+              <h3>Community</h3>
+              <div className="link-wra">
+                <Link href="/affiliate" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Affiliate</Link>
+                <Link href="/contact" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Contact</Link>
+              </div>
+            </div>
+
+            <div className="item">
+              <h3>Account</h3>
+              <div className="link-wra">
+                <Link href="" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Login</Link>
+                <Link href="" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Sign Up</Link>
+              </div>
+            </div>
+
+          </div>
+
+          {/* <div className="flex flex-wrap justify-center space-x-3 mt-8">
             <Link href="/about" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">About</Link>
             <Link href="/affiliate" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Affiliate</Link>
             <Link href="/blog" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Blog</Link>
@@ -43,12 +90,10 @@ const FooterSection: React.FC = () => {
             <button onClick={() => handleNavigation("features")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Features</button>
             <Link href="/our-founders" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Our Founders</Link>
             <Link href="/press" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Press</Link>
-            <button onClick={() => handleNavigation("pricing")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">
-              Pricing
-            </button>
+            <button onClick={() => handleNavigation("pricing")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Pricing</button>
             <Link href="/roadmap" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Roadmap</Link>
             <button onClick={() => handleNavigation("watch-our-story")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Watch Our Story</button>
-          </div>
+          </div> */}
 
           <div className="flex space-x-6 mt-8">
             <a href="https://x.com/wovvoai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">

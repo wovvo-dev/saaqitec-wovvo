@@ -1,6 +1,7 @@
 'use client'
 import { useEffect } from 'react';
 import TimelineSection from "src/components/TimelineSection";
+import InstagramFeed from '../../components/InstgrameFeed';
 
 const Roadmap = () => {
   useEffect(() => {
@@ -40,9 +41,8 @@ const Roadmap = () => {
           </p>
         </div>
       </div>
-
       {/* Instagram Section */}
-      <section id="about_gallery" className="pt-10 md:pt-12 md:mb-[0px] mb-[-80px]">
+      <section id="about_gallery" className="pt-10 md:pt-12 md:mb-[0px] mb-[-20px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mx-auto mb-10">
             <h2 className="text-base font-semibold text-primary tracking-wide uppercase">Follow Us on Instagram</h2>
@@ -50,13 +50,12 @@ const Roadmap = () => {
               See What We've <span className="gradient-text">Been Working On</span>
             </p>
             <p className="mt-4 text-md md:text-xl text-gray-600">
-              <a href="https://www.instagram.com/Wovvo.ai" target="_blank">Wovvo.ai</a>
+              <a href="https://www.instagram.com/Wovvo.ai" target="_blank" className='link-ins'>Wovvo.ai</a>
             </p>
           </div>
-
-          {/* ✅ Elfsight Embed */}
-          <div className="elfsight-app-936ba49a-b1ac-493c-87e1-d2557d0fe4c2" data-elfsight-app-lazy />
         </div>
+        {/* ✅ Instagrma */}
+          <InstagramFeed />
       </section>
     </main>
   );

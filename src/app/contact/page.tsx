@@ -1,4 +1,6 @@
 'use client'
+import Link from "next/link";
+import CtaSection from "../../components/CtaSection";
 
 const ContactPage = () => {
   return (
@@ -52,6 +54,32 @@ const ContactPage = () => {
                 className="w-full px-4 py-3 resize-none bg-white rounded-[5px]"
               ></textarea>
 
+              {/* Checkboxes */}
+              <div>
+                <p className="font-medium mb-2">I am a:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                  {[
+                    "UGC Creator",
+                    "Content Creator",
+                    "Brand or Business",
+                    "Agency",
+                    "Influencer",
+                    "Recruiter or Talent Manager",
+                    "Freelancer",
+                    "Other"
+                  ].map((label, index) => (
+                    <label key={index} className="flex items-center space-x-2">
+                      <input
+                        type="checkbox"
+                        value={label}
+                        className="form-checkbox text-primary"
+                      />
+                      <span>{label}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
               {/* Submit Button */}
               <button
                 type="submit"
@@ -59,7 +87,6 @@ const ContactPage = () => {
               >
                 Send
               </button>
-              
             </form>
           </div>
 
@@ -77,23 +104,32 @@ const ContactPage = () => {
           </div>
         </div>
         <div className="class-faq-bar max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-[70px]">
-            <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
-                <img src="contact-email.svg" className="w-[80px]" alt="" />
-                <h5>Email</h5>
-                <a href="mailto:team@wovvo.ai">Team@wovvo.ai</a>
-            </div>
-            <div className="item bg-gradient-to-r from-[#EE2720] to-[#F98C0D] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
-                <img src="contact-inst.svg" className="w-[80px]" alt="" />
-                <h5 className='text-white'>DM Us</h5>
-                <a href="https://www.instagram.com/wovvo.ai" target="_blank" className='text-white'>@wovvo.ai</a>
-            </div>
-            <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
-                <img src="contact-twiter.svg" className="w-[80px]" alt="" />
-                <h5>Tweet Us</h5>
-                <a href="https://x.com/wovvoai">@wovvoai</a>
-            </div>
+            <Link href="mailto:team@wovvo.ai">
+              <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
+                  <img src="contact-email.svg" className="w-[80px]" alt="" />
+                  <h5>Email</h5>
+                  <Link href="mailto:team@wovvo.ai">Team@wovvo.ai</Link>
+              </div>
+            </Link>
+            <Link href="https://www.instagram.com/wovvo.ai" target="_blank">
+              <div className="item bg-gradient-to-r from-[#EE2720] to-[#F98C0D] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
+                  <img src="contact-inst.svg" className="w-[80px]" alt="" />
+                  <h5 className='text-white'>DM Us</h5>
+                  <Link href="https://www.instagram.com/wovvo.ai" target="_blank" className='text-white'>@wovvo.ai</Link>
+              </div>
+            </Link>
+            <Link href="https://x.com/wovvoai" target="_blank">
+              <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
+                  <img src="contact-twiter.svg" className="w-[80px]" alt="" />
+                  <h5>Tweet Us</h5>
+                  <Link href="https://x.com/wovvoai" target="_blank">@wovvoai</Link>
+              </div>
+            </Link>
         </div>
       </section>
+      
+      <CtaSection />
+
     </main>
   )
 }

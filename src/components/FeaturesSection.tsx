@@ -183,7 +183,7 @@ const FeaturesSection: React.FC = () => {
         <div className="text-center mx-auto mb-16">
           <h2 className="text-base font-semibold text-primary tracking-wide uppercase features-ct-sub-hd">Wovvo isn’t another UGC platform</h2>
           <p className="mt-2 text-4xl font-bold sm:text-4xl features-ct-hd">
-            Wovvo is a Tool that Finds the<br/> Jobs, <span className="gradient-text">you just Simply Apply.</span>
+            Wovvo Is a Tool That Finds the<br/> Jobs, <span className="gradient-text">You Just Simply Apply</span>
           </p>
         </div>
         <div className="space-y-32">

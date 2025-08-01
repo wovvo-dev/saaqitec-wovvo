@@ -1,8 +1,24 @@
 'use client'
 import React, { useState, useRef, useEffect } from 'react'
 import { HelpCircle, ChevronDown } from 'lucide-react'
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const HelpCenterPage = () => {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleNavigation = (id: string) => {
+    if (pathname === "/help-center") {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState(null, "", window.location.pathname);
+      }
+    } else {
+      router.push(`/#${id}`);
+    }
+  };
   const [searchTerm, setSearchTerm] = useState("")
   const [showSuggestions, setShowSuggestions] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -29,8 +45,8 @@ const HelpCenterPage = () => {
     },
     {
         "category": "About",
-        "question": "What makes Wovvo different from other tools?",
-        "answer": "We don’t take a percentage of your deals. Wovvo is designed to be lean, fast, and creator-first. Unlike marketplaces or influencer agencies, we give you full access to listings and let you apply directly."
+        "question": "What makes Wovvo different from other platforms?",
+        "answer": "A platform like us doesn't exist. Wovvo is a tool that finds UGC opportunities across platforms the posts opportunities and collectively posts them on one feed. We don’t take a percentage of your collabs. Wovvo is designed time-saving we give you full access to listings and let you apply directly."
     },
     {
         "category": "About",
@@ -119,11 +135,6 @@ const HelpCenterPage = () => {
         "category": "Affiliates",
         "question": "What is the Wovvo affiliate program?",
         "answer": "Wovvo offers a referral program that rewards creators for sharing their link. Once you join, you’ll get a trackable affiliate link inside your dashboard."
-    },
-    {
-        "category": "Affiliates",
-        "question": "How much can I earn per referral?",
-        "answer": "50% commission for Creator+ and Forever Founder members\n10% commission for Launch Crew and internal reps\nMonthly and annual subscription members will also receive 50% commission, but only on annual plan purchases. Annual plans will be priced at $99 USD, and referring members will receive $49.50 each year per conversion."
     },
     {
         "category": "Affiliates",
@@ -216,9 +227,9 @@ const HelpCenterPage = () => {
   return (
     <main className="relative bg-white pt-24">
       {/* Hero Section */}
-      <div className="aboutbanner help-center flex-col bg-[url(/banner.jpg)] min-h-[350px] bg-cover bg-center flex justify-center items-center px-4 text-center">
+      <div id='help-center-banner' className="aboutbanner help-center flex-col bg-[url(/banner.jpg)] min-h-[350px] bg-cover bg-center flex justify-center items-center px-4 text-center">
         <h2 className="text-[28px] sm:text-[48px] font-bold text-white">
-          Hello, How can we help you?
+          Hey Creator, how can we help?
         </h2>
 
         {/* Search */}
@@ -269,7 +280,7 @@ const HelpCenterPage = () => {
               onClick={() => setSelectedCategory(cat)}
               className={`rounded-full text-sm transition ${
                 selectedCategory === cat
-                  ? 'bg-[rgb(0 0 0 / var(--tw-text-opacity, 0))] text-black font-semibold'
+                  ? 'bg-[#fff] text-black px-5 py-1'
                   : 'bg-[#000] text-white px-5 py-1'
               }`}
             >
@@ -289,14 +300,16 @@ const HelpCenterPage = () => {
             <img src="help-center-icon01.svg" className="w-[80px]" alt="" />
             <h5 className='text-white'>FAQ Articles</h5>
           </div>
-          <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
+          <div onClick={() => handleNavigation("help-center-banner")} className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
             <img src="help-center-icon02.svg" className="w-[80px]" alt="" />
             <h5>How to Use</h5>
           </div>
-          <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
-            <img src="help-center-icon03.svg" className="w-[80px]" alt="" />
-            <h5>Email Submission Form</h5>
-          </div>
+          <Link href={"/contact"} >
+            <div className="item bg-[#fff] rounded-[10px] flex flex-col items-center justify-center px-5 py-7 gap-[10px] shadow-md">
+              <img src="help-center-icon03.svg" className="w-[80px]" alt="" />
+              <h5>Email Submission Form</h5>
+            </div>
+          </Link>
         </div>
 
         <div>

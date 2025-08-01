@@ -83,25 +83,28 @@ const Navbar: React.FC = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+
+          <div className="grid md:grid-cols-[25%,50%,25%] grid-cols-[50%,50%] h-16 mb-header">
+
             <Logo />
+
             <div className="menuopenbtn">
               <img src="menuopn.svg" alt="" />
             </div>
 
-            <div className="hidden lg:flex items-center space-x-3 mb-menu">
+            <div className="hidden lg:flex items-center justify-center space-x-3 mb-menu">
               <div className="menuclosebtn">
                 <img src="menuclose.svg" alt="" />
               </div>
               <div className="logo-mb">
                 <Logo />
               </div>
-              <Link
+              {/* <Link
                 href={"/"}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Home
-              </Link>
+              </Link> */}
               {/* <button
                 onClick={() => handleNavigation("pricing")}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
@@ -156,12 +159,12 @@ const Navbar: React.FC = () => {
               >
                 Watch Our Story
               </button>
-              <Link
+              {/* <Link
                 href={"/contact"}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
               >
                 Contact
-              </Link>
+              </Link> */}
               {/* <button
                 onClick={() => handleNavigation("features")}
                 className="text-gray-700 font-medium px-1.5 py-2 hover:text-primary transition-colors"
@@ -180,16 +183,35 @@ const Navbar: React.FC = () => {
                   setPaymentLink(plans[1]?.paymentLink);
                   handleCheckout(referral);
                 }}
-                className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors"
+                className="block lg:hidden border border-[#ee2720] text-black px-6 py-2 rounded-lg"
               >
                 Login
               </button>
               <button
-                className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors"
+                className="block lg:hidden bg-primary border border-[#ee2720] text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors"
               >
                 Sign Up
               </button>
             </div>
+
+            <div className="menu-btn flex items-center justify-end gap-2 hidden lg:flex">
+              <button
+                onClick={() => {
+                  sendGAEvent("event", "Join", { value: "User Joined!" });
+                  setPaymentLink(plans[1]?.paymentLink);
+                  handleCheckout(referral);
+                }}
+                className="border border-[#ee2720] text-black px-6 py-2 rounded-lg"
+              >
+                Login
+              </button>
+              <button
+                className="bg-primary border border-[#ee2720] text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                Sign Up
+              </button>
+            </div>
+
           </div>
         </div>
       </nav>

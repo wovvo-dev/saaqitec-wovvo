@@ -3,14 +3,14 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';
 
 const niches = [
-  { title: 'Beauty', subtitle: 'Skincare', image: 'niches01.svg' },
-  { title: 'Health', subtitle: 'Wellness', image: 'niches02.svg' },
-  { title: 'Fashion', subtitle: 'Apparel', image: 'niches03.svg' },
-  { title: 'Tech', subtitle: 'Gadgets', image: 'niches04.svg' },
-  { title: 'Food', subtitle: 'Beverage', image: 'niches05.svg' },
-  { title: 'Home', subtitle: 'Lifestyle', image: 'niches06.svg' },
-  { title: 'Travel', subtitle: 'Experiences', image: 'niches07.svg' },
-  { title: 'Parenting', subtitle: 'Family', image: 'niches08.svg' },
+  { title: 'Beauty', subtitle: 'Skincare', image: 'niches01.jpg' },
+  { title: 'Health', subtitle: 'Wellness', image: 'niches02.jpg' },
+  { title: 'Fashion', subtitle: 'Apparel', image: 'niches03.jpg' },
+  { title: 'Tech', subtitle: 'Gadgets', image: 'niches04.jpg' },
+  { title: 'Food', subtitle: 'Beverage', image: 'niches05.jpg' },
+  { title: 'Home', subtitle: 'Lifestyle', image: 'niches06.jpg' },
+  { title: 'Travel', subtitle: 'Experiences', image: 'niches07.jpg' },
+  { title: 'Parenting', subtitle: 'Family', image: 'niches08.jpg' },
 ];
 
 const PopularNiches = () => {
