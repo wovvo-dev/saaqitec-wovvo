@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
 import { members } from '../../data/phoneData';
 
@@ -11,25 +11,31 @@ const SocialProof = ({
     title = 'These Creators Said',
     highlight = 'Yes to Wovvo',
     subtitle = 'Creators you trust. A platform they believe in.',
-    animate = true, // New prop
+    animate = true,
 }) => {
     const [startIndex, setStartIndex] = useState(0);
     const totalPhones = members.length;
 
+    // Memoized sorted members by tagline
+    const sortedMembers = useMemo(() => {
+        return [...members].sort((a, b) => a.tagline.localeCompare(b.tagline));
+    }, []);
+
     useEffect(() => {
-        if (!animate) return; // Skip if animation is false
+        if (!animate) return;
 
         const interval = setInterval(() => {
             setStartIndex((prev) => (prev + view) % totalPhones);
         }, ROTATION_INTERVAL);
+
         return () => clearInterval(interval);
     }, [animate, view, totalPhones]);
 
-    const visibleCards = members
+    const visibleCards = sortedMembers
         .slice(startIndex, startIndex + view)
         .concat(
             startIndex + view > totalPhones
-                ? members.slice(0, (startIndex + view) % totalPhones)
+                ? sortedMembers.slice(0, (startIndex + view) % totalPhones)
                 : []
         );
 
@@ -63,9 +69,9 @@ const SocialProof = ({
                                 <h3 className="text-lg font-extrabold truncate whitespace-nowrap">
                                     {phone.tagline}
                                 </h3>
-                                <p className="text-sm truncate whitespace-nowrap">
+                                {/* <p className="text-sm truncate whitespace-nowrap">
                                     {phone.followers}
-                                </p>
+                                </p> */}
                                 <p className="truncate whitespace-nowrap">
                                     {phone.location}
                                 </p>

@@ -260,7 +260,7 @@ const TimelineSection: React.FC = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="max-w-4xl mx-auto text-center mb-16">
                     <h2 className="text-4xl font-bold mb-6 timline-main-heading">
-                        <span className="gradient-text ">Creator+ is Closing Soon</span><span className='hidden md:inline-block'>—</span>Lock in Lifetime Access
+                        <span className="gradient-text ">Creator+ is Closing Soon </span><span className='hidden md:inline-block'>—</span> Lock in Lifetime Access
                     </h2>
                     <p className="text-lg text-gray-600 mb-8">
                         Forever Founders is 100% sold out ahead of our full launch. Creator+ is the final tier available for early members. Get lifetime access, exclusive perks, and a one-time membership before it closes.

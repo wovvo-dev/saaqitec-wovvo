@@ -111,7 +111,7 @@ export const plans: PricingPlan[] = [
       
       {
         text: "Priority support from Wovvo team",
-        included: false,
+        included: true,
       },
       // {
       //   text: "Access to Founder's Circle community",
@@ -119,23 +119,23 @@ export const plans: PricingPlan[] = [
       // },
       {
         text: "5 free 1-month invites for friends",
-        included: false,
+        included: true,
       },
       {
         text: "Founding contributor perks",
-        included: false,
+        included: true,
       },
       {
         text: "Ability to vote on future platform features",
-        included: false,
+        included: true,
       },
       {
         text: "Premium Founder chat with group coaching",
-        included: false,
+        included: true,
       },
       {
         text: "VIP creator status + Founder's badge",
-        included: false,
+        included: true,
       },
       
     ],
