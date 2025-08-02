@@ -80,15 +80,20 @@ const AffiliatePage = () => {
                 <div className="circle-one">
                     <img src="circle01.svg" alt="circleimg" />
                     <img src="circle02.svg" alt="circleimg" />
+                    <img src="circle06.svg" alt="circleimg" />
+                    <img src="circle07.svg" alt="circleimg" />
+                    <img src="circle10.svg" alt="circleimg" />
                 </div>
                 <div className="circle-two">
                     <img src="circle03.svg" alt="circleimg" />
                     <img src="circle04.svg" alt="circleimg" />
                     <img src="circle05.svg" alt="circleimg" />
+                    <img src="circle08.svg" alt="circleimg" />
+                    <img src="circle09.svg" alt="circleimg" />
                 </div>
                 <div className="text-center flex justify-center items-center flex-col gap-[50px] circle-text">
                     <p className="text-4xl font-bold sm:text-4xl text-white">
-                        Click here to join the <br /> Affiliate Program
+                        Click Here to Join the <br /> Affiliate Program
                     </p>
                     <button
                         className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors"
@@ -150,7 +155,7 @@ const AffiliatePage = () => {
         <div className="insigth max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mx-auto">
                 <p className="text-4xl font-bold sm:text-4xl">
-                    Inside, You’ll <span className="gradient-text">Find:</span>
+                    Inside You’ll <span className="gradient-text">Find:</span>
                 </p>
             </div>
             <div className="insight-content-wrapper">
@@ -190,7 +195,7 @@ const AffiliatePage = () => {
             <button
                 className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors"
                 >
-                Join yearly → Access community
+                Join yearly → Access Community
             </button>
         </div>
 
@@ -203,7 +208,7 @@ const AffiliatePage = () => {
                     Recieve a free Twitter blueprint as a Creator+ member of Wovvo.
                 </p>
             </div>
-            <img src="twiter-banner.png"/>
+            <img src="twiter-banner.gif"/>
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center ucg-bussiness-community bg-white rounded-3xl p-10 bg-[url('/ucg-bassness.jpg')] bg-cover bg-center shadow-[0px_2px_8px_0px_rgba(99,99,99,0.2)]">
@@ -258,7 +263,7 @@ const AffiliatePage = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold sm:text-4xl mb-10">
-                    Questions, UGC rants, or memes?
+                    Questions, UGC Rants, or Memes?
                     </h2>
                     <p className="text-xl mb-10 text-white/80">
                     Send them our way <span><a href="mailto:team@Wovvo.ai"><img src="whitemail.png" />team@Wovvo.ai</a></span> and we’ll be happy to help.

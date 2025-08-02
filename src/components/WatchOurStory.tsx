@@ -52,7 +52,7 @@ export default function WatchOurStory() {
             playsInline
             autoPlay
             muted
-            className={`w-full h-full object-cover`}
+            className={`w-full h-full object-cover placeholder-video`}
           />
           <div
             className="absolute inset-0 z-10 pointer-events-none opacity-[0]"

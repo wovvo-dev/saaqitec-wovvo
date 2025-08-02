@@ -127,15 +127,21 @@ const PressPage = () => {
                 key={item.id}
                 className="bg-white shadow-md rounded-xl p-4 flex flex-col gap-4 relative overflow-hidden"
               >
-                <img
-                  className="w-full rounded-lg"
-                  src={item.image}
-                  alt={item.heading}
-                />
-                <h3 className="text-black font-semibold text-[20px]">
-                  {item.heading}
-                </h3>
-                <p className="text-black text-[15px]">{item.description}</p>
+                <a href={item.url}>
+                  <img
+                    className="w-full rounded-lg"
+                    src={item.image}
+                    alt={item.heading}
+                  />
+                </a>
+                <a href={item.url}>
+                  <h3 className="text-black font-semibold text-[20px]">
+                    {item.heading}
+                  </h3>
+                </a>
+                <a href={item.url}>
+                  <p className="text-black text-[15px]">{item.description}</p>
+                </a>
 
                 <div className="share-wrapper flex justify-between items-end relative">
                   <a

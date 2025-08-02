@@ -36,10 +36,10 @@ const SocialProof = ({
     return (
         <div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p className="text-4xl font-bold sm:text-4xl text-center px-4 md:px-8">
+                <p className="text-4xl font-bold sm:text-4xl text-center px-4 md:px-8 hh">
                     {title} <span className="gradient-text">{highlight}</span>
                 </p>
-                <p className="mt-4 mb-7 text-xl text-gray-600 text-center px-4 md:px-8">
+                <p className="mt-4 mb-7 text-xl text-gray-600 text-center px-4 md:px-8 hh">
                     {subtitle}
                 </p>
 

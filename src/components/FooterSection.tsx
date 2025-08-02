@@ -42,7 +42,6 @@ const FooterSection: React.FC = () => {
               <div className="link-wra">
                 <Link href="/about" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">About</Link>
                 <Link href="/our-founders" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Our Founders</Link>
-                <Link href="/press" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Press</Link>
                 <button onClick={() => handleNavigation("watch-our-story")} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Watch Our Story</button>
               </div>
             </div>
@@ -61,6 +60,7 @@ const FooterSection: React.FC = () => {
               <div className="link-wra">
                 <Link href="/blog" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Guides</Link>
                 <Link href={"/help-center"} className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Help Center</Link>
+                <Link href="/press" className="text-gray-400 font-medium px-2 py-1 hover:text-white transition-colors">Press</Link>
               </div>
             </div>
 
@@ -134,6 +134,7 @@ const FooterSection: React.FC = () => {
           </div>
         </div>
       </div>
+      <Link href={'https://www.tiktok.com/t/ZT6AyPwjh/'} target="_blank" className="ft-play-btn bg-white/20 hover:bg-white/30 p-6 rounded-full text-white text-2xl transition pointer-events-auto z-30" aria-label="Play video"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-play" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></Link>
     </footer>
   );
 };
