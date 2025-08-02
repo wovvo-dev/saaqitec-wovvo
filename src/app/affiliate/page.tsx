@@ -301,7 +301,7 @@ const AffiliatePage = () => {
 
                         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 text-white text-center space-y-1 w-[90vw] sm:w-auto max-w-xs">
                         <h3 className="text-lg font-extrabold truncate whitespace-nowrap">{phone.tagline}</h3>
-                        <p className="text-sm truncate whitespace-nowrap">{phone.followers}</p>
+                        {/* <p className="text-sm truncate whitespace-nowrap">{phone.followers}</p> */}
                         <p className="truncate whitespace-nowrap">{phone.location}</p>
                         </div>
                     </div>
