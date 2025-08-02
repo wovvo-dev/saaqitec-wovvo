@@ -151,7 +151,7 @@ const FooterSection: React.FC = () => {
       {/* Modal with TikTok Embed */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[1000] px-4">
-          <div className="relative bg-white max-w-[600px] w-full p-4 rounded-lg shadow-xl m-h-[80vh] overflow-y-scroll">
+          <div className="relative bg-white max-w-[600px] w-full p-4 rounded-lg shadow-xl max-h-[80vh] overflow-y-scroll">
             <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-2 right-2 text-black hover:text-red-500 text-2xl font-bold"
