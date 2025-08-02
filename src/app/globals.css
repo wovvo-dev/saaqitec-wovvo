@@ -1416,4 +1416,8 @@
     display: none;
   }
 
+  .mb-menu :where(button,a){
+    justify-content: center !important;
+  }
+
 }
