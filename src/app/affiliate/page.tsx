@@ -6,11 +6,11 @@ const members = [
   { image: "/images/Jennifer_Alford.jpeg", tagline: "Jennifer Alford", followers: "1.9k Followers", location: "Iowa, US" },
   { image: "/images/Alex_Gettlin.jpg", tagline: "Alex Gettlin", followers: "3.3k Followers", location: "Georgia, US" },
   { image: "/images/Jessalyn_Tester.jpeg", tagline: "Jessalyn Tester", followers: "17k Followers", location: "Ohio, US" },
-  { image: "/comunity-avatr.jpg", tagline: "Ryan Barned", followers: "lorem Followers", location: "lorem , lorem" },
+  { image: "/comunity-avatr.jpg", tagline: "Ryan Barnes", followers: "", location: "" },
   { image: "/images/Sarah-2.6k-Twitter.png", tagline: "Sarah Franz", followers: "31.5k Followers", location: "Alabama, US" },
-  { image: "/comunity-avatr.jpg", tagline: "Mannie Williams", followers: "lorem Followers", location: "lorem , lorem" },
-  { image: "/comunity-avatr.jpg", tagline: "Kendra Morancy", followers: "lorem Followers", location: "lorem , lorem" },
-  { image: "/comunity-avatr.jpg", tagline: "James Schneider", followers: "lorem Followers", location: "lorem , lorem" },
+  { image: "/comunity-avatr.jpg", tagline: "Mannie Williams", followers: "", location: "" },
+  { image: "/comunity-avatr.jpg", tagline: "Kendra Morancy", followers: "", location: "" },
+  { image: "/comunity-avatr.jpg", tagline: "James Schneider", followers: "", location: "" },
 ];
 
 const AffiliatePage = () => {
@@ -113,7 +113,7 @@ const AffiliatePage = () => {
                     150+ Creators <span className="gradient-text">& Growing</span>
                 </p>
                 <p className="mt-4 text-md md:text-xl text-gray-600">
-                    Become a Wovvo yearly member for $99 and unlock two major things:
+                    Become a Creator+ member and unlock two major things:
                 </p>
             </div>
 
@@ -130,7 +130,7 @@ const AffiliatePage = () => {
                         <button
                             className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors mt-[30px]"
                             >
-                            Join yearly → Access community
+                            Join yearly → Access Community
                         </button>
                     </div>
                 </div>
@@ -271,7 +271,7 @@ const AffiliatePage = () => {
                     <button
                         className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-lg text-white hover:bg-primary-dark transition-colors"
                         >
-                        Built by creators for Creators, that’s Wovvo.
+                        Built by Creators for Creators
                     </button>
                 </div>
             </div>
@@ -280,7 +280,7 @@ const AffiliatePage = () => {
         <div className="comunitymember py-12 md:py-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <p className="text-4xl font-bold sm:text-4xl text-center px-4 md:px-8">
-                Creators who are earning<span className="gradient-text"> commission and in the community</span>
+                Creators <span className="gradient-text"> Earning Commission </span>
                 </p>
 
                 <div className="mt-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 transition-all duration-500 ease-in-out">

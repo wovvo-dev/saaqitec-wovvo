@@ -863,6 +863,20 @@
     top: -82px;
   }
 
+  button.ft-play-btn {
+    position: fixed;
+  }
+
+  .footer-link-wrapper .item .link-wra {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .footer-link-wrapper .item .link-wra button , .footer-link-wrapper .item .link-wra a {
+      text-align: center;
+      font-size: 16px;
+  }
+
 }
 
 /* responsive */
@@ -1360,6 +1374,8 @@
     max-height: var(--size) !important;
     min-width: var(--size) !important;
     min-height: var(--size) !important;
+    right: 5px;
+    bottom: 5px;
   }
 
   .ft-play-btn svg {
@@ -1394,6 +1410,10 @@
   }
   .timline-main-heading span{
     display: block;
+  }
+
+  .timline-main-heading span+span {
+    display: none;
   }
 
 }

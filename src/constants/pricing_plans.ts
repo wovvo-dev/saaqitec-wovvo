@@ -76,14 +76,22 @@ export const plans: PricingPlan[] = [
     paymentLink: process.env.NEXT_PUBLIC_CREATOR_PASS_PLUS || "",
     features: [
       {
-        text: "1:1 Audit Library Access – YouTube: https://www.youtube.com/watch?v=UUhT8HZw2UA",
+        text: "Watch 50+ UGC portfolio + Twitter audits (25+ hours) YouTube: https://www.youtube.com/watch?v=UUhT8HZw2UA",
         included: true,
       },
       {
-        text: "Set Your Twitter Up for Success Webinar",
+        text: " Twitter Portfolio Blueprint: how to stand out on Twitter to brands",
         included: true,
       },
       
+      {
+        text: "550+ brand Email contacts for UGC creators",
+        included: true,
+      },
+      {
+        text: "500+ Viral Hook Vault for videos",
+        included: true,
+      },
       {
         text: "Unlimited job feed access",
         included: true,
@@ -100,23 +108,23 @@ export const plans: PricingPlan[] = [
         text: "50% Referral Program",
         included: true,
       },
-      {
-        text: "Priority support from Wovvo team",
-        included: true,
-      },
-      {
-        text: "5 free 1-month invites for friends",
-        included: true,
-      },
       
       {
-        text: "Founding contributor perks",
+        text: "Priority support from Wovvo team",
         included: false,
       },
       // {
       //   text: "Access to Founder's Circle community",
       //   included: false,
       // },
+      {
+        text: "5 free 1-month invites for friends",
+        included: false,
+      },
+      {
+        text: "Founding contributor perks",
+        included: false,
+      },
       {
         text: "Ability to vote on future platform features",
         included: false,
@@ -127,14 +135,6 @@ export const plans: PricingPlan[] = [
       },
       {
         text: "VIP creator status + Founder's badge",
-        included: false,
-      },
-      {
-        text: "Free access to Founder's Webinars + AMAs",
-        included: false,
-      },
-      {
-        text: "1:1 UGC Portfolio & Social Media Video Audit",
         included: false,
       },
       

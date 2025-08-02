@@ -20,10 +20,10 @@ const aboutpage = () => {
                     Mission & <span className="gradient-text">Origin</span>
                 </p>
                 <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">
-                    Wovvo was created to fill a real gap in the creator space: a lack of trustworthy, centralized places to find real, paid UGC jobs. Our mission is to build a smart, easy-to-use tool that helps creators turn their content into consistent income.
+                    Wovvo was created to solve one of the biggest pain points for UGC creators: finding paid brand deals without wasting hours scrolling or refreshing feeds across different platforms.
                 </p>
-                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">Instead of chasing down gigs through sketchy DMs or dead job boards, Wovvo gives creators a clean, searchable experience filled with legit opportunities, time-saving tools, and community support. We’re here to make the business side of being a creator easier, faster, and more sustainable.</p>
-                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600 max-w-[95%]">This all started with a small team of creators and marketers who got tired of the chaos. We knew there had to be a better way, so we built it.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">We’re not a marketplace. We’re not an agency. Wovvo is a daily-use tool built by creators, for creators. A centralized platform where every opportunity is delivered in one place, so you can spend less time hunting and more time growing your network and getting paid.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600 max-w-[95%]">We imagine a world where creators never miss out on paid opportunities because they weren’t online at the right time. A world where job-hunting doesn’t lead to burnout. That’s the future we’re building and it started with a content creator Paula who knew there had to be a smarter way.</p>
             </div>
         </section>
 
@@ -33,7 +33,7 @@ const aboutpage = () => {
                 <p className="mt-2 text-4xl font-bold sm:text-4xl">
                     For The Creator <span className="gradient-text">Economy</span>
                 </p>
-                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">We see a future where creators are treated like professionals, not just influencers.</p>
+                <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">We see a future where creators are treated like creator professionals, not just influencers.</p>
                 <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">Our vision is to support the new wave of UGC talent by building the infrastructure that powers the modern creator’s career. Wovvo isn’t just a job feed. It’s a trusted tool to help you pitch smarter, get paid faster, and grow your business on your own terms.</p>
                 <p className="mt-4 text-[14px] md:text-[16px] text-gray-600">As the creator economy grows, so does the need for structure, transparency, and support. Wovvo is here to lead that shift, giving creators the power, tools, and freedom to build real careers doing what they love.</p>
             </div>

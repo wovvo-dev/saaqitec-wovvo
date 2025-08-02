@@ -229,7 +229,7 @@ const HelpCenterPage = () => {
       {/* Hero Section */}
       <div id='help-center-banner' className="aboutbanner help-center flex-col bg-[url(/banner.jpg)] min-h-[350px] bg-cover bg-center flex justify-center items-center px-4 text-center">
         <h2 className="text-[28px] sm:text-[48px] font-bold text-white">
-          Hey Creator, How Can We Help?
+          Got a question Creator?
         </h2>
 
         {/* Search */}
