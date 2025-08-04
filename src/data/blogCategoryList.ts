@@ -11,10 +11,10 @@ const blogCategoryList = [
         id:3,
         name:"Pitching & Working with Brands"
     },
-    {
-        id:4,
-        name:"UGC Career Growth & Income"
-    },
+    // {
+    //     id:4,
+    //     name:"UGC Career Growth & Income"
+    // },
     {
         id:5,
         name:"Tools, Platforms & Safety"

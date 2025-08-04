@@ -61,7 +61,7 @@ export const members: {
   { id: 46, image: "/images/wendy-cooper.jpg", tagline: "Wendy Cooper", followers: "", location: "USA" },
   { id: 47, image: "/images/jessica-gaglione.jpg", tagline: "Jessica Gaglione", followers: "", location: "USA" },
   { id: 48, image: "/images/jaclyn-forero.jpg", tagline: "Jaclyn Forero", followers: "", location: "USA" },
-  { id: 49, image: "/images/alex-gettlin.jpg", tagline: "Alexander Gettlin", followers: "", location: "USA" },
+  // { id: 49, image: "/images/alex-gettlin.jpg", tagline: "Alexander Gettlin", followers: "", location: "USA" },
   { id: 50, image: "/images/mary-haislip.jpg", tagline: "Mary Haislip", followers: "", location: "USA" },
   { id: 51, image: "/images/kenneth-hill.jpg", tagline: "Kenneth Hill", followers: "", location: "USA" },
   { id: 51, image: "/images/teresa-holley.jpg", tagline: "Teresa Holley", followers: "", location: "USA" },
